@@ -255,6 +255,10 @@ h5,
 }
 
 @media (max-width: 991.98px) {
+    .bg-light-blue-phone {
+        background-color: #1265ea;
+    }
+
     .bg-list-phone {
         background-color: rgba(18, 101, 234, 0.05);
     }
@@ -288,6 +292,10 @@ h5,
     vertical-align: top;
     color: #1265ea;
     content: "\2022";
+}
+
+.bg-light-blue .list-bullet > li::before {
+    color: #ffffff;
 }
 
 @media (min-width: 992px) {
