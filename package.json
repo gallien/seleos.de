@@ -1,0 +1,13 @@
+{
+  "name": "seleos.de",
+  "version": "1.0.0",
+  "author": "Andreas Gallien <gallien@seleos.de>",
+  "homepage": "https://www.seleos.de",
+  "license": "SEE LICENSE IN LICENSE",
+  "private": true,
+  "main": "index.html",
+  "dependencies": {
+    "bootstrap": "5.2.3",
+    "jquery": "^3.7.0"
+  }
+}
