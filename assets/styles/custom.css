@@ -56,6 +56,11 @@ a:hover {
     color: #2e67e2;
 }
 
+a[href^="tel"],
+a[x-apple-data-detectors] {
+    color: inherit !important;
+}
+
 a.btn.btn-primary {
     padding-top: 9px;
     padding-bottom: 9px;
