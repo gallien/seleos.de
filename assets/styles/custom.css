@@ -64,7 +64,7 @@ a[x-apple-data-detectors] {
 a.btn.btn-primary {
     padding-top: 9px;
     padding-bottom: 9px;
-    color: #ffffff;
+    color: #ffffff !important;
     border-color: #1265ea;
     border-radius: 0;
     background-color: #1265ea;
@@ -218,14 +218,14 @@ h5,
 }
 
 .link-primary {
-    color: #1265ea;
+    color: #1265ea !important;
     padding-bottom: 0;
-    border-bottom: 1px solid #1265ea;
+    border-bottom: 1px solid #1265ea !important;
 }
 
 .link-primary:hover {
-    color: #0b52c4;
-    border-bottom: 1px solid #1265ea;
+    color: #0b52c4 !important;
+    border-bottom: 1px solid #0b52c4 !important;
 }
 
 .fs-5 {
@@ -593,7 +593,9 @@ nav.navbar .navbar-collapse {
 /* Header */
 @media only screen and (min-width: 992px) {
     #header {
-        background: url('../images/background.jpg') center right no-repeat;
+        background-image: image-set(url("../images/background.jpg") type("image/jpeg"), url("../images/background.webp") type("image/webp"));
+        background-position: center right;
+        background-repeat: no-repeat;
         background-color: #0b1b4c;;
         background-size: contain;
     }
