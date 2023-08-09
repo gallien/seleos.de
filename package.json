@@ -7,7 +7,6 @@
   "private": true,
   "main": "index.html",
   "dependencies": {
-    "bootstrap": "5.2.3",
-    "jquery": "^3.7.0"
+    "bootstrap": "5.2.3"
   }
 }
