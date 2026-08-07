@@ -1,6 +1,6 @@
 /* poppins-200 - latin */
 @font-face {
-    font-display: optional; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-display: swap;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 200;
@@ -9,7 +9,7 @@
 }
 /* poppins-300 - latin */
 @font-face {
-    font-display: optional; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-display: swap;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 300;
@@ -18,7 +18,7 @@
 }
 /* poppins-regular - latin */
 @font-face {
-    font-display: optional; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-display: swap;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
@@ -27,7 +27,7 @@
 }
 /* poppins-500 - latin */
 @font-face {
-    font-display: optional; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-display: swap;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
@@ -62,12 +62,14 @@ a[x-apple-data-detectors] {
     color: inherit !important;
 }
 
-a.btn.btn-lg {
+a.btn.btn-lg,
+button.btn.btn-lg {
     font-weight: 300;
     letter-spacing: 2px;
 }
 
-a.btn.btn-primary {
+a.btn.btn-primary,
+button.btn.btn-primary {
     padding-top: 9px;
     padding-bottom: 9px;
     color: #ffffff !important;
@@ -82,7 +84,10 @@ a.btn.btn-primary {
 
 a.btn.btn-primary:active,
 a.btn.btn-primary:focus,
-a.btn.btn-primary:hover {
+a.btn.btn-primary:hover,
+button.btn.btn-primary:active,
+button.btn.btn-primary:focus,
+button.btn.btn-primary:hover {
     color: #ffffff;
     border-color: #0b52c4;
     background-color: #0b52c4;
@@ -143,6 +148,44 @@ h1,
     text-transform: none;
 }
 
+/* Abschnittslabel: kleine Auszeichnung oberhalb der Abschnittsüberschrift.
+   Bewusst kein Heading-Tag, damit die H-Ebenen die inhaltlichen Überschriften tragen. */
+.section-label {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 20px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #2e67e2;
+    letter-spacing: 2px;
+}
+
+.section-label > span {
+    display: inline-block;
+    margin-top: -2px;
+    margin-right: 10px;
+    width: 40px;
+    border-bottom: 1px solid #2e67e2;
+    vertical-align: middle;
+}
+
+@media only screen and (min-width: 768px) {
+    .section-label > span {
+        width: 60px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .section-label > span {
+        width: 80px;
+    }
+}
+
+.section-label.text-white > span {
+    border-bottom: 1px solid #ffffff;
+}
+
 h2 {
     margin-bottom: 0.5rem;
     font-size: 1rem;
@@ -179,7 +222,8 @@ h2.text-white > span {
     border-bottom: 1px solid #ffffff;
 }
 
-h3 {
+h3,
+.section-title {
     font-size: 1.5rem;
     font-weight: 200;
     line-height: 140%;
@@ -222,7 +266,8 @@ h5,
 @media only screen and (min-width: 992px) {
     h1,
     .h1,
-    h3 {
+    h3,
+    .section-title {
         font-size: 2.125rem;
     }
 
@@ -270,6 +315,14 @@ h5,
 }
 
 /* General */
+section[id] {
+    scroll-margin-top: 70px;
+}
+
+.mw-copy {
+    max-width: 920px;
+}
+
 @media only screen and (max-width: 576px) {
     .row.gx-0 .container {
         padding-left: 0;
@@ -312,6 +365,10 @@ h5,
     background-color: #edf1f5;
 }
 
+.bg-soft {
+    background-color: #f4f7fb;
+}
+
 .dashed-end {
     border-bottom: 1px dashed #1f365a;
 }
@@ -341,6 +398,30 @@ h5,
     color: #ffffff;
 }
 
+.list-white > li::before {
+    color: #ffffff;
+}
+
+.orientation-list {
+    padding-left: 1.25rem;
+    list-style: disc;
+}
+
+.orientation-list > li {
+    font-size: 1rem;
+    line-height: 1.75;
+}
+
+.orientation-list > li::before {
+    display: none;
+    content: none;
+}
+
+.orientation-list > li::marker {
+    color: #1265ea;
+    font-size: 1.25rem;
+}
+
 @media (min-width: 992px) {
     .list-bullet > li {
         font-size: 1.25rem;
@@ -349,11 +430,7 @@ h5,
 }
 
 /* Navigation */
-#hamburger {
-    display: none;
-}
-
-#hamburger + label {
+.navbar-toggler-lines {
     position: relative;
     width: 45px;
     height: 23px;
@@ -364,9 +441,7 @@ h5,
     text-align: left;
 }
 
-#hamburger + label div,
-#hamburger + label div::before,
-#hamburger + label div::after {
+.navbar-toggler-lines > span {
     background: #ffffff;
     position: absolute;
     height: 2px;
@@ -375,62 +450,43 @@ h5,
     transition: all .5s;
 }
 
-.navbar-light .navbar-toggler label span {
-    letter-spacing: 0.1rem;
-    text-transform: uppercase;
-}
-
-.navbar-light .navbar-toggler.collapsed #hamburger + label div {
+.navbar-light .navbar-toggler.collapsed .navbar-toggler-lines > span {
     background: #0e1c49;
 }
 
-.navbar-light .navbar-toggler.collapsed span:nth-child(1) {
-    display: none;
-}
-
-.navbar-light .navbar-toggler.collapsed span:nth-child(2) {
-    display: none !important;
-}
-
-@media only screen and (min-width: 576px) {
-    .navbar-light .navbar-toggler.collapsed span:nth-child(1) {
-        display: none !important;
-    }
-
-    .navbar-light .navbar-toggler span:nth-child(2) {
-        display: inline !important;
-    }
-}
-
-#hamburger + label div:first-child {
+.navbar-toggler-lines > span:first-child {
     top: 0;
 }
 
-#hamburger + label div:nth-child(2) {
+.navbar-toggler-lines > span:nth-child(2) {
     top: 10px;
     width: 45px
 }
 
-#hamburger + label div:nth-child(3) {
+.navbar-toggler-lines > span:nth-child(3) {
     top: 20px;
 }
 
-#hamburger + label div {
+.navbar-toggler-lines > span {
     transition: top .15s .17s, transform .12s .033s;
 }
 
-#hamburger + label div:nth-child(3) {
+.navbar-toggler-lines > span:nth-child(3) {
     transition: top .15s .17s, transform .17s;
 }
 
-.navbar-light .navbar-toggler:not(.collapsed) #hamburger + label div {
+.navbar-light .navbar-toggler:not(.collapsed) .navbar-toggler-lines > span {
     top: 10px;
     width: 30px;
     transform: rotate(135deg);
     transition: top .1s, transform .12s .1s;
 }
 
-.navbar-light .navbar-toggler:not(.collapsed) #hamburger + label div:nth-child(3) {
+.navbar-light .navbar-toggler:not(.collapsed) .navbar-toggler-lines > span:nth-child(2) {
+    opacity: 0;
+}
+
+.navbar-light .navbar-toggler:not(.collapsed) .navbar-toggler-lines > span:nth-child(3) {
     transform: rotate(225deg);
     transition: top .1s, transform .17s .1s;
 }
@@ -629,7 +685,35 @@ nav.navbar .navbar-collapse {
 }
 
 /* Header */
+.hero-kicker {
+    font-size: 0.875rem;
+    font-weight: 300;
+    line-height: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    hyphens: none;
+    word-break: keep-all;
+}
+
+.hero-kicker > span {
+    display: inline-block;
+    width: 40px;
+    margin-right: 10px;
+    border-bottom: 1px solid #ffffff;
+    vertical-align: middle;
+}
+
+@media only screen and (min-width: 768px) {
+    .hero-kicker > span {
+        width: 60px;
+    }
+}
+
 @media only screen and (min-width: 992px) {
+    .hero-kicker > span {
+        width: 80px;
+    }
+
     #header {
         background-image: url('../images/background.jpg');
         background-position: center right;
@@ -659,15 +743,160 @@ button {
     border-radius: 6px;
 }
 
-.img-circle:hover::before {
-    position: absolute;
-    top: -3px; // border: 2px + offset: 1px
-    right: -3px; // border: 2px + offset: 1px
-    bottom: -3px; // border: 2px + offset: 1px
-    left: -3px; // border: 2px + offset: 1px
-    border: 2px solid red;
-    border-radius: 7px; // border—radius: 6px + offset: 1px
-    content: "";
+.service-card {
+    border: 1px solid rgba(0, 0, 0, .125);
+}
+
+.service-list {
+    margin: 0;
+    padding-left: 1.1rem;
+}
+
+.service-list li {
+    margin-bottom: 0.45rem;
+}
+
+.service-scope {
+    columns: 1;
+    column-gap: 3rem;
+}
+
+.legacy-links a {
+    display: flex;
+    min-height: 72px;
+    padding: 1rem 1.25rem;
+    align-items: center;
+    border-left: 4px solid #1265ea;
+    background-color: #f4f7fb;
+    font-weight: 400;
+    transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.legacy-links a:hover,
+.legacy-links a:focus {
+    color: #ffffff;
+    background-color: #1265ea;
+}
+
+@media only screen and (min-width: 768px) {
+    .service-scope {
+        columns: 2;
+    }
+}
+
+/* Process */
+.process-row {
+    row-gap: 2rem;
+}
+
+.process-step {
+    position: relative;
+    padding-top: 0.75rem;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    border-left: 1px solid rgba(18, 101, 234, 0.35);
+}
+
+.process-number {
+    display: block;
+    margin-bottom: 1.25rem;
+    color: #1265ea;
+    font-size: 1.75rem;
+    font-weight: 200;
+    letter-spacing: 2px;
+}
+
+.process-step h3,
+.process-step h4 {
+    margin-bottom: 1rem;
+}
+
+.card h3,
+.process-step h3,
+#why-seleos h3,
+.timeline-item h3 {
+    font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.process-step-light {
+    border-left-color: rgba(255, 255, 255, 0.35);
+}
+
+.process-step-light .process-number {
+    color: #ffffff;
+}
+
+@media only screen and (max-width: 1199.98px) {
+    .process-step:nth-child(odd) {
+        border-left-color: rgba(18, 101, 234, 0.35);
+    }
+}
+
+/* Proof */
+.proof-case {
+    border-top: 4px solid #1265ea;
+    background: #f4f7fb;
+    box-shadow: 0 8px 30px rgba(5, 18, 57, 0.08);
+}
+
+.proof-case > div {
+    display: grid;
+    padding: 1.25rem 1.5rem;
+    border-bottom: 1px solid rgba(23, 54, 93, 0.14);
+    gap: .4rem 1.5rem;
+}
+
+.proof-case > div:last-child {
+    border-bottom: 0;
+}
+
+.proof-case strong {
+    color: #1265ea;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+@media only screen and (min-width: 768px) {
+    .proof-case > div {
+        grid-template-columns: minmax(145px, .75fr) 2fr;
+    }
+}
+
+/* FAQ */
+.accordion-item {
+    color: #17365d;
+    border-color: rgba(23, 54, 93, 0.18);
+    background-color: transparent;
+}
+
+.accordion-button {
+    padding: 1.35rem 0;
+    color: #17365d;
+    background-color: transparent;
+    font-size: 1.05rem;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0;
+    text-transform: none;
+    box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #1265ea;
+    background-color: transparent;
+}
+
+.accordion-button:focus {
+    border-color: transparent;
+}
+
+.accordion-body {
+    padding: 0 0 1.5rem;
+    line-height: 1.75;
 }
 
 
@@ -684,8 +913,92 @@ button {
 footer p {
     letter-spacing: 2px;
 }
+
 @media only screen and (min-width: 992px) {
     footer .dashed-end {
         border-bottom: none !important;
     }
+}
+
+/* Regulatorische Fristen-Timeline (NIS2, CRA) */
+.timeline {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.timeline-item {
+    position: relative;
+    padding-bottom: 2rem;
+    padding-left: 1.75rem;
+    border-left: 1px solid rgba(18, 101, 234, 0.35);
+}
+
+.timeline-item:last-child {
+    padding-bottom: 0;
+    border-left-color: transparent;
+}
+
+.timeline-item:before {
+    position: absolute;
+    top: 0.4rem;
+    left: -5px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: #1265ea;
+    content: '';
+}
+
+.timeline-item h3 {
+    margin-bottom: 0.5rem;
+}
+
+.timeline-marker {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.35rem;
+}
+
+.timeline-marker time,
+.timeline-marker > span:first-child {
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #1265ea;
+}
+
+.timeline-state {
+    padding: 2px 10px;
+    border: 1px solid rgba(18, 101, 234, 0.4);
+    font-size: 0.8125rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #17365d;
+}
+
+.timeline-countdown {
+    padding: 2px 10px;
+    background-color: #1265ea;
+    font-size: 0.8125rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #ffffff;
+}
+
+.timeline-item-highlight {
+    border-left-color: #1265ea;
+}
+
+.timeline-item-highlight:before {
+    top: 0.3rem;
+    left: -7px;
+    width: 13px;
+    height: 13px;
+}
+
+.timeline-item-highlight .timeline-state {
+    border-color: #1265ea;
+    background-color: rgba(18, 101, 234, 0.1);
 }

@@ -1,0 +1,38 @@
+# Seleos GmbH
+
+> Seleos ist ein Senior-Engineering-Team aus Berlin für produktive KI-gestützte Softwareentwicklung, Software- und Architekturbewertung, Application Security, Penetrationstests sowie technische NIS2- und CRA-Umsetzung.
+
+Seleos verbindet Softwareentwicklung, Security Engineering und technische Compliance-Umsetzung. Zwei erfahrene Entwickler arbeiten direkt an Analyse, Architektur, Implementierung, Tests und Reviews und setzen KI-Werkzeuge als Produktivitätshebel ein.
+
+## Kernleistungen
+
+- [Startseite und Leistungsübersicht](https://www.seleos.de/): KI-gestützte Softwareentwicklung, Software- und Architekturbewertung, Security Reviews, Penetrationstests sowie NIS2-/CRA-Umsetzung
+- [KI-gestützte Softwareentwicklung](https://www.seleos.de/ki-gestuetzte-softwareentwicklung.html): produktive Softwareentwicklung mit KI-Werkzeugen, klaren Architekturregeln, automatisierter Qualitätssicherung, Security-Prüfungen und menschlicher Freigabe
+- [Software- und Architekturbewertung](https://www.seleos.de/software-architektur-bewertung.html): unabhängige Analyse von Qualität, Wartbarkeit, Datenflüssen, Cloud-Betrieb, Security, KI-Einsatz und technischen Risiken
+- [Software Security Review](https://www.seleos.de/security-review-software.html): Threat Modeling, Architektur, Code, Abhängigkeiten, Berechtigungen und Remediation
+- [Penetrationstests](https://www.seleos.de/penetrationstest-webanwendungen-apis.html): autorisierte Tests für Webanwendungen, APIs und KI-gestützte Systeme
+- [NIS2-Umsetzung](https://www.seleos.de/nis2-umsetzung.html): Risiko- und Gap-Analysen, Security-Maßnahmen, Incident-Prozesse, Lieferkette und Evidenzen
+- [Cyber Resilience Act](https://www.seleos.de/cyber-resilience-act.html): Secure Development, SBOM, Vulnerability Handling, Meldungen und technische Dokumentation für Softwareprodukte
+- [Continuous Security & Compliance Management](https://www.seleos.de/continuous-security-compliance-management.html): laufende Architektur-, Security-, Maßnahmen-, SBOM- und Evidence-Reviews mit technischer Umsetzungskapazität
+
+## Weitere Engineering-Leistungen
+
+- [Technologieberatung](https://www.seleos.de/technologieberatung-berlin.html)
+- [Cloud Development](https://www.seleos.de/cloud-development.html)
+- [Software- und Webentwicklung](https://www.seleos.de/webentwicklung-berlin.html)
+- [PHP-Entwicklung](https://www.seleos.de/php-programmierung-berlin.html)
+- [Shopify Development](https://www.seleos.de/shopify-development.html)
+- [Performance-Optimierung](https://www.seleos.de/performanceoptimierung-berlin.html)
+
+## Unternehmen und Kontakt
+
+- Unternehmen: Seleos GmbH
+- Standort: Berlin, Deutschland
+- Tätigkeitsgebiet: Deutschland, Österreich und Schweiz
+- E-Mail: info@seleos.de
+- Telefon: +49 30 25785767
+- Website: https://www.seleos.de/
+
+## Abgrenzung
+
+Seleos bietet technische Analyse, Umsetzung, Prüfung, Dokumentation und laufende Betreuung. Die Leistungen ersetzen keine Rechtsberatung, Zertifizierung oder formelle Konformitätsbewertung.

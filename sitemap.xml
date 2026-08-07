@@ -2,23 +2,58 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://www.seleos.de/</loc>
+        <lastmod>2026-08-07</lastmod>
     </url>
     <url>
         <loc>https://www.seleos.de/technologieberatung-berlin.html</loc>
+        <lastmod>2026-08-02</lastmod>
     </url>
     <url>
         <loc>https://www.seleos.de/cloud-development.html</loc>
+        <lastmod>2026-08-02</lastmod>
     </url>
     <url>
         <loc>https://www.seleos.de/shopify-development.html</loc>
+        <lastmod>2026-08-02</lastmod>
     </url>
     <url>
         <loc>https://www.seleos.de/webentwicklung-berlin.html</loc>
+        <lastmod>2026-08-02</lastmod>
     </url>
     <url>
         <loc>https://www.seleos.de/php-programmierung-berlin.html</loc>
+        <lastmod>2026-08-02</lastmod>
     </url>
     <url>
         <loc>https://www.seleos.de/performanceoptimierung-berlin.html</loc>
+        <lastmod>2026-08-02</lastmod>
+    </url>
+    <url>
+        <loc>https://www.seleos.de/ki-gestuetzte-softwareentwicklung.html</loc>
+        <lastmod>2026-08-02</lastmod>
+    </url>
+    <url>
+        <loc>https://www.seleos.de/software-architektur-bewertung.html</loc>
+        <lastmod>2026-08-02</lastmod>
+    </url>
+    <url>
+        <loc>https://www.seleos.de/security-review-software.html</loc>
+        <lastmod>2026-08-02</lastmod>
+    </url>
+    <url>
+        <loc>https://www.seleos.de/penetrationstest-webanwendungen-apis.html</loc>
+        <lastmod>2026-08-02</lastmod>
+    </url>
+    <url>
+        <loc>https://www.seleos.de/nis2-umsetzung.html</loc>
+        <lastmod>2026-08-02</lastmod>
+    </url>
+    <url>
+        <loc>https://www.seleos.de/cyber-resilience-act.html</loc>
+        <lastmod>2026-08-02</lastmod>
+    </url>
+    <url>
+        <loc>https://www.seleos.de/continuous-security-compliance-management.html</loc>
+        <lastmod>2026-08-02</lastmod>
     </url>
 </urlset>

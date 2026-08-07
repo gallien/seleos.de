@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <title>Webentwicklung, Shopify &amp; PHP-Entwicklung Berlin | Seleos GmbH</title>
+    <title>KI-gestütztes Engineering, Security &amp; NIS2/CRA | Seleos</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Seleos entwickelt individuelle Webanwendungen, Shopify-Integrationen und performante PHP-/Cloud-Systeme für Start-ups und KMU. Jetzt Projekt besprechen.">
+    <meta name="description" content="Seleos entwickelt Software mit KI – produktiv und kontrolliert, bewertet Architekturen und Security und etabliert NIS2-/CRA-Prozesse. Senior Engineering aus Berlin.">
     <meta name="robots" content="index,follow">
-    <meta property="og:title" content="Webentwicklung, Shopify &amp; PHP-Entwicklung Berlin | Seleos GmbH">
+    <meta property="og:locale" content="de_DE">
+    <meta property="og:title" content="Mit KI produktiver entwickeln. Software sicher betreiben. | Seleos">
     <meta property="og:image" content="https://www.seleos.de/assets/images/seleos_fb.jpg">
-    <meta property="og:description" content="Seleos entwickelt individuelle Webanwendungen, Shopify-Integrationen und performante PHP-/Cloud-Systeme für Start-ups und KMU. Jetzt Projekt besprechen.">
+    <meta property="og:image:alt" content="Seleos GmbH – KI-gestütztes Engineering, Security und NIS2/CRA-Umsetzung">
+    <meta property="og:description" content="KI-gestützte Softwareentwicklung, Architektur- und Security-Bewertung, Penetrationstests sowie technische NIS2- und CRA-Umsetzung durch ein erfahrenes Entwicklerteam.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.seleos.de/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mit KI produktiver entwickeln. Software sicher betreiben. | Seleos">
+    <meta name="twitter:description" content="KI-gestützte Softwareentwicklung, Security Engineering und technische NIS2-/CRA-Umsetzung mit mehr Engineering und weniger Koordination.">
+    <meta name="twitter:image" content="https://www.seleos.de/assets/images/seleos_fb.jpg">
     <link rel="canonical" href="https://www.seleos.de/">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" media="screen">
-    <link rel="stylesheet" href="assets/styles/custom.css" media="screen">
+    <link rel="stylesheet" href="assets/styles/custom.css?v=20260802" media="screen">
     <link rel="apple-touch-icon" sizes="57x57" href="assets/images/icons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="assets/images/icons/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="assets/images/icons/apple-icon-72x72.png">
@@ -33,28 +39,19 @@
     <meta name="msapplication-TileImage" content="assets/images/icons/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 </head>
-<body id="top" data-bs-spy="scroll" data-bs-offset="0" data-bs-target=".navbar-collapse" tabindex="0">
+<body id="top" data-bs-spy="scroll" data-bs-offset="70" data-bs-target="#navbar" tabindex="0">
 
-<nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-white">
+<nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-white" aria-label="Hauptnavigation">
     <div class="container">
-        <a href="/"><img src="assets/images/logo.svg" width="120" height="30" alt="Logo" class="navbar-brand m-0 p-0"></a>
-        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
-            <label for="hamburger">
-                <span class="d-none">Menü</span>
-                <span class="d-none">Schließen</span>
-            </label>
-            <input type="checkbox" id="hamburger" />
-            <label for="hamburger">
-                <div></div>
-                <div></div>
-                <div></div>
-            </label>
+        <a href="/" aria-label="Seleos Startseite"><img src="assets/images/logo.svg" width="120" height="30" alt="Seleos GmbH" class="navbar-brand m-0 p-0"></a>
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Navigation öffnen">
+            <span class="navbar-toggler-lines" aria-hidden="true"><span></span><span></span><span></span></span>
         </button>
         <div id="navbar-collapse" class="collapse navbar-collapse">
             <div class="navbar-nav navbar-nav-scroll">
                 <a class="nav-link d-flex align-self-center" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" href="#top">Home</a>
-                <a class="nav-link d-flex align-self-center" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" href="#philosophy">Philosophie</a>
-                <a class="nav-link d-flex align-self-center" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" href="#services">Services</a>
+                <a class="nav-link d-flex align-self-center" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" href="#services">Leistungen</a>
+                <a class="nav-link d-flex align-self-center" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" href="#approach">Vorgehen</a>
                 <a class="nav-link d-flex align-self-center" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" href="#team">Team</a>
                 <a class="nav-link d-flex align-self-center" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" href="#contact">Kontakt</a>
             </div>
@@ -66,18 +63,21 @@
     </div>
 </nav>
 
-<article>
+<main>
     <section id="header" class="bg-dark-blue-r">
         <div class="container mw-100">
             <div class="row gx-0">
                 <div class="col-12">
                     <div class="container my-0 py-5">
                         <div class="row">
-                            <div class="col-lg-6 my-lg-5">
-                                <h2 class="text-white mb-4"><span></span>Seleos GmbH</h2>
-                                <h1 class="text-white text-padded"><span>Webanwendungen,<br>Shopify &amp; PHP</span></h1>
-                                <p class="mt-4 mb-0 fs-5 lh-lg text-white">Wir entwickeln individuelle Software, Integrationen und performante Websysteme für Start-ups und KMU.</p>
-                                <a href="/#contact" class="mt-5 rounded-0 btn btn-lg btn-outline-light fs-6 text-uppercase">Projekt starten</a>
+                            <div class="col-lg-7 my-lg-5">
+                                <p class="hero-kicker text-white mb-4"><span></span>KI-gestützte Entwicklung · Security Engineering · NIS2 &amp; CRA</p>
+                                <h1 class="text-white text-padded"><span>Mit KI produktiver entwickeln.<br>Software sicher betreiben.</span></h1>
+                                <p class="mt-4 mb-0 fs-5 lh-lg text-white">Wir entwickeln Software mit KI – produktiv und kontrolliert, bewerten bestehende Anwendungen und Architekturen und etablieren belastbare Security-, NIS2- und CRA-Prozesse.</p>
+                                <div class="d-flex flex-column flex-sm-row align-items-start gap-3 mt-5">
+                                    <a href="#contact" class="rounded-0 btn btn-lg btn-primary fs-6 text-uppercase">Vorhaben einordnen</a>
+                                    <a href="#services" class="rounded-0 btn btn-lg btn-outline-light fs-6 text-uppercase">Leistungen ansehen</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -85,24 +85,27 @@
             </div>
         </div>
     </section>
+
     <section id="about">
         <div class="container my-4 my-lg-5">
             <div class="row">
                 <div class="col-lg-6">
-                    <p class="mb-0 fs-5 lh-lg">Seleos ist ein technischer Umsetzungspartner für individuelle Webanwendungen, Shopify-Integrationen, PHP-Entwicklung, Cloud-Systeme und Performance-Optimierung. Wir arbeiten vor allem für Start-ups sowie kleine und mittelständische Unternehmen, die komplexe digitale Projekte pragmatisch und zuverlässig umsetzen wollen.</p>
+                    <p class="mb-0 fs-5 lh-lg">KI kann Softwareentwicklung, Qualitätssicherung und Geschäftsprozesse erheblich verbessern – wenn sie kontrolliert in reale Systeme integriert wird. Wir setzen KI bereits produktiv ein und verbinden ihre Geschwindigkeit mit klarer Architektur, automatisierten Tests, Security Reviews und menschlicher Verantwortung.</p>
                 </div>
                 <div class="col-lg-6">
-                    <p class="mb-0 fs-5 lh-lg">Wir verbinden Technologieberatung mit hands-on Entwicklung: von der Anforderungserhebung über Architektur und Implementierung bis zur Wartung. Der Fokus liegt auf stabilen, wartbaren Lösungen, klaren Prioritäten und einem realistischen Blick auf Aufwand, Nutzen und Betriebskosten.</p>
+                    <p class="mb-0 fs-5 lh-lg">Diese Erfahrung machen wir für andere Unternehmen kaufbar. Wir übernehmen KI-gestützte Softwareentwicklung, analysieren bestehende Software und externe Architekturen und begleiten die technische Umsetzung von Security-, NIS2- und CRA-Anforderungen – vom ersten Befund bis zum laufenden Prozess.</p>
                 </div>
             </div>
         </div>
     </section>
-    <section id="philosophy">
+
+    <section id="why-seleos">
         <div class="container">
             <div class="row">
                 <div class="col-12 my-4 my-lg-5">
-                    <h2><span></span> Philosophie</h2>
-                    <h3>Die 3 Grundprinzipien unserer Arbeit</h3>
+                    <p class="section-label"><span></span> Warum Seleos</p>
+                    <h2 class="section-title">Mehr Engineering, weniger Koordination.</h2>
+                    <p class="mt-4 mb-0 fs-5 lh-lg mw-copy">Sie arbeiten direkt mit zwei erfahrenen Entwicklern, die KI-Werkzeuge gezielt für Analyse, Umsetzung, Tests, Reviews und Dokumentation einsetzen. So fließt mehr Zeit in die Lösung und weniger in Übergaben, Abstimmungsschleifen und Projekt-Overhead.</p>
                 </div>
             </div>
         </div>
@@ -112,99 +115,34 @@
                     <div class="container my-4 my-lg-5">
                         <div class="row">
                             <div class="col-lg-4 my-3">
-                                <p class="text-center"><img src="assets/images/icon-qualitaet.svg" width="90" height="90" alt="Qualität"></p>
-                                <h4 class="text-center mb-4">Qualität</h4>
-                                <p class="mb-0 lh-2 hyphens-auto">Wir stellen hohe Ansprüche an unsere Arbeitsergebnisse. Diese Leidenschaft für Qualität ist unser Beitrag zu Ihrem Erfolg. Dabei setzen wir auf Werkzeuge, um die hohen Qualitätsanforderungen stetig zu überwachen.</p>
+                                <p class="text-center"><img src="assets/images/icon-integritaet.svg" width="90" height="90" alt="Direkte Verantwortung"></p>
+                                <h3 class="text-center mb-4">Direkte Verantwortung</h3>
+                                <p class="mb-0 lh-2 hyphens-auto">Die Entwickler, die Ihr Vorhaben analysieren und die Architektur bewerten, setzen die Lösung auch um. Sie erhalten klare Ansprechpartner ohne lange Übergabeketten zwischen Vertrieb, Projektleitung und Technik.</p>
                             </div>
                             <div class="col-lg-4 my-3">
-                                <p class="text-center"><img src="assets/images/icon-innovation.svg" width="90" height="90" alt="Innovation"></p>
-                                <h4 class="text-center mb-4">Innovation</h4>
-                                <p class="mb-0 lh-2 hyphens-auto">Der Schlüssel zum Erfolg sind Innovationen, die das Geschäft von morgen sichern. Dabei denken wir technologisch und geschäftlich voraus, sodass Ihre Investitionen langfristig Bestand haben.</p>
+                                <p class="text-center"><img src="assets/images/icon-innovation.svg" width="90" height="90" alt="KI als Produktivitätshebel"></p>
+                                <h3 class="text-center mb-4">KI als Produktivitätshebel</h3>
+                                <p class="mb-0 lh-2 hyphens-auto">Spezialisierte KI-Werkzeuge unterstützen uns bei klar abgegrenzten Entwicklungs-, Analyse-, Test- und Review-Aufgaben. Fachliche Entscheidungen, Security-Bewertung und Freigabe bleiben bei uns.</p>
                             </div>
                             <div class="col-lg-4 my-3">
-                                <p class="text-center"><img src="assets/images/icon-integritaet.svg" width="90" height="90" alt="Integrität"></p>
-                                <h4 class="text-center mb-4">Integrität</h4>
-                                <p class="mb-0 lh-2 hyphens-auto">Eine Grundvoraussetzung unserer Geschäftsbeziehungen ist die Schaffung und Erhaltung eines fairen, verbindlichen und verantwortungsbewussten Verhältnisses in der Zusammenarbeit mit unseren Kunden und Mitarbeitern.</p>
+                                <p class="text-center"><img src="assets/images/icon-qualitaet.svg" width="90" height="90" alt="Systematische Qualitätssicherung"></p>
+                                <h3 class="text-center mb-4">Qualität mit System</h3>
+                                <p class="mb-0 lh-2 hyphens-auto">Verbindliche Architekturregeln, automatisierte Tests, Security-Gates und nachvollziehbare Reviews machen KI-gestützte Entwicklung kontrollierbar. Geschwindigkeit entsteht innerhalb klarer technischer Leitplanken.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container my-4 my-lg-5">
-            <div class="row">
-                <div class="col-12 col-lg-6">
-                    <p class="mb-0 fs-5 lh-lg">Wir setzen auf bewährte Technologien und erweitern sie dort, wo individuelle Geschäftsprozesse, Schnittstellen oder Performance-Anforderungen es verlangen. So entstehen stabile Lösungen, die zu Ihrem Unternehmen passen und langfristig weiterentwickelt werden können.</p>
-                </div>
-            </div>
-        </div>
     </section>
+
     <section id="services">
         <div class="container">
             <div class="row">
                 <div class="col-12 my-4 my-lg-5">
-                    <h2><span></span> Services</h2>
-                    <h3 class="pb-4 dashed-end">Technische Umsetzung für Web, Shops und Cloud</h3>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row mb-4 mb-lg-5">
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="mb-3 d-flex align-items-center">
-                        <div class="flex-shrink-0"><img src="assets/images/icon-check.svg" width="30" height="30" alt="Check"></div>
-                        <div class="flex-grow-1 ms-3"><a href="technologieberatung-berlin.html">Technologieberatung</a></div>
-                    </div>
-                    <div class="mb-3 d-flex align-items-center">
-                        <div class="flex-shrink-0"><img src="assets/images/icon-check.svg" width="30" height="30" alt="Check"></div>
-                        <div class="flex-grow-1 ms-3">Anforderungserhebung</div>
-                    </div>
-                    <div class="mb-3 d-flex align-items-center">
-                        <div class="flex-shrink-0"><img src="assets/images/icon-check.svg" width="30" height="30" alt="Check"></div>
-                        <div class="flex-grow-1 ms-3">Agile Project Management</div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="mb-3 d-flex align-items-center">
-                        <div class="flex-shrink-0"><img src="assets/images/icon-check.svg" width="30" height="30" alt="Check"></div>
-                        <div class="flex-grow-1 ms-3">Digital Transformation</div>
-                    </div>
-                    <div class="mb-3 d-flex align-items-center">
-                        <div class="flex-shrink-0"><img src="assets/images/icon-check.svg" width="30" height="30" alt="Check"></div>
-                        <div class="flex-grow-1 ms-3"><a href="cloud-development.html">Cloud Development</a></div>
-                    </div>
-                    <div class="mb-3 d-flex align-items-center">
-                        <div class="flex-shrink-0"><img src="assets/images/icon-check.svg" width="30" height="30" alt="Check"></div>
-                        <div class="flex-grow-1 ms-3"><a href="shopify-development.html">Shopify Development</a></div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="mb-3 d-flex align-items-center">
-                        <div class="flex-shrink-0"><img src="assets/images/icon-check.svg" width="30" height="30" alt="Check"></div>
-                        <div class="flex-grow-1 ms-3"><a href="webentwicklung-berlin.html">Fullstack-Webentwicklung</a></div>
-                    </div>
-                    <div class="mb-3 d-flex align-items-center">
-                        <div class="flex-shrink-0"><img src="assets/images/icon-check.svg" width="30" height="30" alt="Check"></div>
-                        <div class="flex-grow-1 ms-3"><a href="php-programmierung-berlin.html">PHP-Programmierung</a></div>
-                    </div>
-                    <div class="mb-3 d-flex align-items-center">
-                        <div class="flex-shrink-0"><img src="assets/images/icon-check.svg" width="30" height="30" alt="Check"></div>
-                        <div class="flex-grow-1 ms-3">React-Entwicklung</div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="mb-3 d-flex align-items-center">
-                        <div class="flex-shrink-0"><img src="assets/images/icon-check.svg" width="30" height="30" alt="Check"></div>
-                        <div class="flex-grow-1 ms-3"><a href="performanceoptimierung-berlin.html">Performance-Optimierung</a></div>
-                    </div>
-                    <div class="mb-3 d-flex align-items-center">
-                        <div class="flex-shrink-0"><img src="assets/images/icon-check.svg" width="30" height="30" alt="Check"></div>
-                        <div class="flex-grow-1 ms-3">Code-Optimierung</div>
-                    </div>
-                    <div class="mb-3 d-flex align-items-center">
-                        <div class="flex-shrink-0"><img src="assets/images/icon-check.svg" width="30" height="30" alt="Check"></div>
-                        <div class="flex-grow-1 ms-3">Datenbank-Tuning</div>
-                    </div>
+                    <p class="section-label"><span></span> Leistungen</p>
+                    <h2 class="section-title pb-4 dashed-end">Entwickeln, bewerten, absichern und betreiben</h2>
+                    <p class="mt-4 mb-0 fs-5 lh-lg mw-copy">Wir begleiten Software über den gesamten technischen Verbesserungszyklus: von produktiver KI-gestützter Entwicklung über unabhängige Architektur- und Security-Bewertung bis zu belastbaren Prozessen und laufender Betreuung.</p>
                 </div>
             </div>
         </div>
@@ -213,95 +151,69 @@
                 <div class="col-12">
                     <div class="container my-4 mt-5 mb-4 mb-lg-5">
                         <div class="row">
-                            <div class="col-lg-4 mb-4">
-                                <div class="card pt-4 h-100 rounded-0">
+                            <div class="col-md-6 col-xl-3 mb-4">
+                                <div class="card service-card pt-4 h-100 rounded-0">
                                     <div class="card-body d-flex flex-column px-4 py-5">
-                                        <div class="mb-4 img-circle"><a href="technologieberatung-berlin.html"><img src="assets/images/icon-technologieberatung.svg" class="d-block mx-auto mb-4" width="160" height="160" alt="Technologieberatung"></a></div>
-                                        <h4 class="h5 mb-4 pb-3 text-center dashed-end">Technologie-Beratung</h4>
-                                        <p class="flex-grow-1">Unsere Technologieberatung schafft Klarheit vor der Umsetzung. Wir bewerten Anforderungen, Systeme und Schnittstellen, priorisieren technische Optionen und entwickeln belastbare Lösungswege für Webanwendungen, Shop-Systeme und digitale Prozesse.</p>
-                                        <p class="mt-3 mb-0 text-center align-items-end"><a href="technologieberatung-berlin.html" class="link-primary text-uppercase">Mehr Info</a></p>
+                                        <div class="mb-4 img-circle"><img src="assets/images/icon-webentwicklung.svg" class="d-block mx-auto mb-4" width="130" height="130" alt="Produktive KI-gestützte Softwareentwicklung"></div>
+                                        <h3 class="h5 mb-4 pb-3 text-center dashed-end">KI-gestützte Entwicklung</h3>
+                                        <p>Wir entwickeln produktive Software mit KI-Werkzeugen – schneller, kontrollierbar und mit klarer menschlicher Verantwortung.</p>
+                                        <ul class="service-list flex-grow-1">
+                                            <li>Neue Funktionen und Systeme</li>
+                                            <li>Modernisierung und Integration</li>
+                                            <li>Automatisierte Qualitätssicherung</li>
+                                            <li>Security und produktiver Betrieb</li>
+                                        </ul>
+                                        <p class="mt-3 mb-0 text-center"><a href="ki-gestuetzte-softwareentwicklung.html" class="link-primary text-uppercase">Mehr erfahren</a></p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 mb-4">
-                                <div class="card pt-4 h-100 rounded-0">
+                            <div class="col-md-6 col-xl-3 mb-4">
+                                <div class="card service-card pt-4 h-100 rounded-0">
                                     <div class="card-body d-flex flex-column px-4 py-5">
-                                        <div class="mb-4 img-circle"><a href="cloud-development.html"><img src="assets/images/icon-cloud.svg" class="d-block mx-auto mb-4" width="160" height="160" alt="Cloud Development"></a></div>
-                                        <h4 class="h5 mb-4 pb-3 text-center dashed-end">Cloud Development</h4>
-                                        <p class="flex-grow-1">Wir entwickeln und betreiben Cloud-Lösungen, die zu Anwendung, Budget und Team passen. Dazu gehören skalierbare Architekturen, Automatisierung, Schnittstellen, Migrationen und die laufende technische Betreuung bestehender Systeme.</p>
-                                        <p class="mt-3 mb-0 text-center align-items-end"><a href="cloud-development.html" class="link-primary text-uppercase">Mehr Info</a></p>
+                                        <div class="mb-4 img-circle"><img src="assets/images/icon-technologieberatung.svg" class="d-block mx-auto mb-4" width="130" height="130" alt="Software- und Architekturbewertung"></div>
+                                        <h3 class="h5 mb-4 pb-3 text-center dashed-end">Software &amp; Architektur</h3>
+                                        <p>Wir bewerten bestehende und extern entwickelte Systeme unabhängig hinsichtlich Qualität, Wartbarkeit, Datenflüssen, Betrieb, KI-Einsatz und Risiken.</p>
+                                        <ul class="service-list flex-grow-1">
+                                            <li>Architektur, Code und APIs</li>
+                                            <li>Technische Schulden</li>
+                                            <li>Tests und Qualitätssicherung</li>
+                                            <li>Priorisierter Maßnahmenplan</li>
+                                        </ul>
+                                        <p class="mt-3 mb-0 text-center"><a href="software-architektur-bewertung.html" class="link-primary text-uppercase">Mehr erfahren</a></p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 mb-4">
-                                <div class="card pt-4 h-100 rounded-0">
+                            <div class="col-md-6 col-xl-3 mb-4">
+                                <div class="card service-card pt-4 h-100 rounded-0">
                                     <div class="card-body d-flex flex-column px-4 py-5">
-                                        <div class="mb-4 img-circle"><a href="shopify-development.html"><img src="assets/images/icon-shopify.svg" class="d-block mx-auto mb-4" width="160" height="160" alt="Shopify Development"></a></div>
-                                        <h4 class="h5 mb-4 pb-3 text-center dashed-end">Shopify Development</h4>
-                                        <p class="flex-grow-1">Wir entwickeln Shopify-Shops, Themes und API-Integrationen für anspruchsvolle E-Commerce-Prozesse. Dazu zählen Zahlungs- und Logistikanbindungen, individuelle Funktionen, Datenflüsse und technische Optimierung bestehender Shops.</p>
-                                        <p class="mt-3 mb-0 text-center"><a href="shopify-development.html" class="link-primary text-uppercase">Mehr Info</a></p>
+                                        <div class="mb-4 img-circle"><img src="assets/images/icon-performance.svg" class="d-block mx-auto mb-4" width="130" height="130" alt="Security Reviews und Penetrationstests"></div>
+                                        <h3 class="h5 mb-4 pb-3 text-center dashed-end">Security &amp; Pentests</h3>
+                                        <p>Wir prüfen autorisierte Webanwendungen, APIs, Cloud-nahe Architekturen und KI-Systeme auf konkrete Risiken – nachvollziehbar und umsetzungsorientiert.</p>
+                                        <ul class="service-list flex-grow-1">
+                                            <li>Threat Modeling</li>
+                                            <li>Security Reviews</li>
+                                            <li>Penetrationstests</li>
+                                            <li>Behebung und Retest</li>
+                                        </ul>
+                                        <p class="mt-3 mb-0 text-center"><a href="security-review-software.html" class="link-primary text-uppercase">Security Review</a><span class="mx-2" aria-hidden="true">·</span><a href="penetrationstest-webanwendungen-apis.html" class="link-primary text-uppercase">Pentest</a></p>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-4 mb-4">
-                                <div class="card pt-4 h-100 rounded-0">
+                            <div class="col-md-6 col-xl-3 mb-4">
+                                <div class="card service-card pt-4 h-100 rounded-0">
                                     <div class="card-body d-flex flex-column px-4 py-5">
-                                        <div class="mb-4 img-circle"><a href="webentwicklung-berlin.html"><img src="assets/images/icon-webentwicklung.svg" class="d-block mx-auto mb-4" width="160" height="160" alt="Fullstack-Webentwicklung"></a></div>
-                                        <h5 class="mb-4 pb-3 text-center dashed-end">Fullstack-Webentwicklung</h5>
-                                        <p class="flex-grow-1">Wir entwickeln individuelle Webanwendungen vom Frontend bis zum Backend. Dabei verbinden wir HTML, CSS, JavaScript, React, PHP und Java mit sauberer Architektur, SEO-Grundlagen, Mehrsprachigkeit und langfristiger Wartbarkeit.</p>
-                                        <p class="mt-3 b-0 text-center"><a href="webentwicklung-berlin.html" class="link-primary text-uppercase">Mehr Info</a></p>
+                                        <div class="mb-4 img-circle"><img src="assets/images/icon-cloud.svg" class="d-block mx-auto mb-4" width="130" height="130" alt="Technische NIS2- und CRA-Umsetzung"></div>
+                                        <h3 class="h5 mb-4 pb-3 text-center dashed-end">NIS2 &amp; CRA</h3>
+                                        <p>Wir übersetzen regulatorische Anforderungen in technische Prozesse, Kontrollen und Nachweise und begleiten Einführung, Umsetzung und laufende Pflege.</p>
+                                        <ul class="service-list flex-grow-1">
+                                            <li>Risiko- und Gap-Analyse</li>
+                                            <li>Secure Development und SBOM</li>
+                                            <li>Incident- und Meldeprozesse</li>
+                                            <li>Evidence und Betreuung</li>
+                                        </ul>
+                                        <p class="mt-3 mb-0 text-center"><a href="nis2-umsetzung.html" class="link-primary text-uppercase">NIS2 ansehen</a><br><a href="cyber-resilience-act.html" class="link-primary text-uppercase mt-2 d-inline-block">CRA ansehen</a></p>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-lg-4 mb-4">
-                                <div class="card pt-4 h-100 rounded-0">
-                                    <div class="card-body d-flex flex-column px-4 py-5">
-                                        <div class="mb-4 img-circle"><a href="php-programmierung-berlin.html"><img src="assets/images/icon-php.svg" class="d-block mx-auto mb-4" width="160" height="160" alt="PHP-Programmierung"></a></div>
-                                        <h5 class="mb-4 pb-3 text-center dashed-end">PHP-Programmierung</h5>
-                                        <p class="flex-grow-1">Wir übernehmen PHP-Entwicklung, Erweiterungen und Modernisierung bestehender Anwendungen. Unsere Erfahrung umfasst Symfony, Laravel, Zend Framework, individuelle APIs, Datenbanklogik und die schrittweise Ablösung gewachsener Systeme.</p>
-                                        <p class="mt-3 mb-0 text-center"><a href="php-programmierung-berlin.html" class="link-primary text-uppercase">Mehr Info</a></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 mb-4">
-                                <div class="card pt-4 h-100 rounded-0">
-                                    <div class="card-body d-flex flex-column px-4 py-5">
-                                        <div class="mb-4 img-circle"><a href="performanceoptimierung-berlin.html"><img src="assets/images/icon-performance.svg" class="d-block mx-auto mb-4" width="160" height="160" alt="Performance-Optimierung"></a></div>
-                                        <h5 class="mb-4 pb-3 text-center dashed-end">Performance-Optimierung</h5>
-                                        <p class="flex-grow-1">Wir analysieren langsame Websites, Shops und Anwendungen systematisch und beseitigen Engpässe in Code, Datenbank, Cache, Webserver und Infrastruktur. Ziel sind messbare Verbesserungen bei Ladezeit, Stabilität und Betriebskosten.</p>
-                                        <p class="mt-3 mb-0 text-center"><a href="performanceoptimierung-berlin.html" class="link-primary text-uppercase">Mehr Info</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-lg-6 offset-lg-3 text-center">
-                    <h3 class="mb-5 text-white">Wie können wir Ihnen helfen?</h3>
-                    <div class="d-flex flex-column flex-md-row mb-lg-5">
-                        <a class="btn btn-lg btn-primary btn-phone w-100 mb-2 mb-md-0 me-md-2" href="tel:+493025785767">Anrufen</a>
-                        <a class="btn btn-lg btn-primary btn-mail w-100 ms-0 ms-md-2" href="mailto:info@seleos.de">E-Mail schreiben</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container mw-100 mb-5 px-0 bg-light-grey">
-            <div class="row gx-0">
-                <div class="col-12">
-                    <div class="container-fluid px-0">
-                        <div class="row gx-0">
-                            <div class="col-lg-5 d-flex mt-4 mt-lg-0 align-items-center justify-content-center">
-                                <h2 class="h1 text-padded py-4"><span>Wir haben für Sie das Wesentliche im Blick</span></h2>
-                            </div>
-                            <div class="col-lg-7 text-end">
-                                <picture>
-                                    <source srcset="assets/images/vr.jpg" media="(min-width:750px)">
-                                    <img src="assets/images/vr-mobil.jpg" width="696" height="445" alt="Virtual Reality" loading="lazy" class="w-100 img-fluid">
-                                </picture>
                             </div>
                         </div>
                     </div>
@@ -309,99 +221,282 @@
             </div>
         </div>
     </section>
-    <section id="team">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 my-4 my-lg-5">
-                    <h2><span></span> Team</h2>
-                    <h3 class="pb-4 dashed-end">Die Spezialisten</h3>
+
+    <section id="approach">
+        <div class="container my-4 my-lg-5">
+            <div class="row mb-4">
+                <div class="col-12">
+                    <p class="section-label"><span></span> Vorgehen</p>
+                    <h2 class="section-title">Vom Problem zur überprüfbaren Verbesserung</h2>
+                </div>
+            </div>
+            <div class="row process-row">
+                <div class="col-md-6 col-xl process-step">
+                    <span class="process-number">01</span>
+                    <h3>Verstehen</h3>
+                    <p>Wir klären Ziel, Systemkontext, Datenflüsse und geschäftliche Auswirkungen.</p>
+                </div>
+                <div class="col-md-6 col-xl process-step">
+                    <span class="process-number">02</span>
+                    <h3>Bewerten</h3>
+                    <p>Wir analysieren Architektur, Code, Prozesse und Risiken und priorisieren die Befunde.</p>
+                </div>
+                <div class="col-md-6 col-xl process-step">
+                    <span class="process-number">03</span>
+                    <h3>Umsetzen</h3>
+                    <p>Wir entwickeln Funktionen, beheben Schwächen und etablieren belastbare Prozesse.</p>
+                </div>
+                <div class="col-md-6 col-xl process-step">
+                    <span class="process-number">04</span>
+                    <h3>Prüfen</h3>
+                    <p>Tests, Security-Prüfungen, Reviews und Retests zeigen, ob die Maßnahmen greifen.</p>
+                </div>
+                <div class="col-md-6 col-xl process-step">
+                    <span class="process-number">05</span>
+                    <h3>Betreiben</h3>
+                    <p>Wir dokumentieren Ergebnisse und begleiten Qualität, Security und Compliance weiter.</p>
                 </div>
             </div>
         </div>
-        <div class="container">
-            <div class="row gx-5">
+    </section>
+
+    <section id="assessments">
+        <div class="container mb-5 mw-100 bg-soft">
+        <div class="container py-5">
+            <div class="row mb-4">
+                <div class="col-12">
+                    <p class="section-label"><span></span> Einfach starten</p>
+                    <h2 class="section-title">Klar abgegrenzte Assessments mit verwertbarem Ergebnis</h2>
+                    <p class="mt-4 mb-0 fs-5 lh-lg mw-copy">Ein erstes Projekt braucht keinen monatelangen Beratungsprozess. Wir starten mit einem klaren Ziel und liefern eine belastbare Entscheidungs- und Umsetzungsgrundlage.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 rounded-0"><div class="card-body px-4 py-5">
+                        <h3>KI-gestütztes Engineering Assessment</h3>
+                        <p>Für neue Software, Weiterentwicklung oder Modernisierung mit höherer Produktivität und kontrollierbarer Qualität.</p>
+                        <p class="mb-0"><strong>Ergebnis:</strong> Ausgangslage, Zielarchitektur, Qualitätskriterien, geeignete KI-gestützte Arbeitsweise und Umsetzungsplan.</p>
+                    </div></div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 rounded-0"><div class="card-body px-4 py-5">
+                        <h3>Software &amp; Architecture Assessment</h3>
+                        <p>Für eine unabhängige Bewertung bestehender, übernommener oder extern entwickelter Software.</p>
+                        <p class="mb-0"><strong>Ergebnis:</strong> Architektur- und Risikobewertung sowie Maßnahmenplan mit Aufwand und Wirkung.</p>
+                    </div></div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 rounded-0"><div class="card-body px-4 py-5">
+                        <h3>Security Assessment</h3>
+                        <p>Für Webanwendungen, APIs oder KI-Systeme vor Release, Kundenprüfung oder Weiterentwicklung.</p>
+                        <p class="mb-0"><strong>Ergebnis:</strong> reproduzierbare Befunde, Risikoeinordnung, Behebungsempfehlungen und optionaler Retest.</p>
+                    </div></div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 rounded-0"><div class="card-body px-4 py-5">
+                        <h3>NIS2/CRA Readiness &amp; Action Plan</h3>
+                        <p>Für die Überführung regulatorischer Anforderungen in konkrete Prozesse und Maßnahmen.</p>
+                        <p class="mb-0"><strong>Ergebnis:</strong> Gap- und Risikoanalyse, Maßnahmenregister, Prozess- und Evidenzplan.</p>
+                    </div></div>
+                </div>
+            </div>
+            <p class="mt-5 mb-0 text-center"><a href="#contact" class="btn btn-lg btn-primary">Passenden Einstieg besprechen</a></p>
+        </div>
+        </div>
+    </section>
+
+    <section id="continuous">
+        <div class="container mb-5 mw-100 bg-dark-blue-r text-white">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-12 mb-4">
+                    <p class="section-label text-white"><span></span> Kontinuierliche Zusammenarbeit</p>
+                    <h2 class="section-title text-white">Security und Compliance sind kein Einmalprojekt</h2>
+                </div>
+            </div>
+            <div class="row align-items-start gx-lg-5">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <p class="mb-0 fs-5 lh-lg">Software, Abhängigkeiten, Bedrohungen und regulatorische Anforderungen verändern sich. Deshalb begleiten wir Unternehmen nach Assessment und Umsetzung auch langfristig – mit definierter Kapazität und klarer Verantwortung.</p>
+                </div>
+                <div class="col-lg-6">
+                    <ul class="list-bullet list-white mb-4">
+                        <li>regelmäßige Architektur-, Risiko- und Maßnahmenreviews</li>
+                        <li>Pflege technischer NIS2-/CRA-Prozesse und Evidenzen</li>
+                        <li>Schwachstellen-, Dependency- und SBOM-Reviews</li>
+                        <li>Remediation, Security Updates und Prozessübungen</li>
+                        <li>Weiterentwicklung KI-gestützter Engineering- und Qualitätsprozesse</li>
+                    </ul>
+                    <div class="d-flex flex-column flex-sm-row align-items-start gap-3">
+                        <a href="continuous-security-compliance-management.html" class="rounded-0 btn btn-lg btn-primary fs-6 text-uppercase">Leistung ansehen</a>
+                        <a href="#contact" class="rounded-0 btn btn-lg btn-outline-light fs-6 text-uppercase">Betreuung anfragen</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="engineering">
+        <div class="container my-4 my-lg-5">
+            <div class="row">
+                <div class="col-12 mb-4">
+                    <p class="section-label"><span></span> Weitere Engineering-Leistungen</p>
+                    <h2 class="section-title">Bewährte Software- und Cloud-Kompetenz</h2>
+                </div>
+            </div>
+            <div class="row gx-lg-5 align-items-start">
+                <div class="col-lg-5 mb-4 mb-lg-0">
+                    <p class="mb-0 fs-5 lh-lg">Unsere neue Ausrichtung baut auf langjähriger Erfahrung in Software-, Web-, PHP-, Cloud- und Integrationsprojekten auf. Diese Leistungen bleiben verfügbar und ergänzen unsere Arbeit an KI-, Security- und Compliance-Vorhaben.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="row g-3 legacy-links">
+                        <div class="col-sm-6"><a href="technologieberatung-berlin.html">Technologieberatung</a></div>
+                        <div class="col-sm-6"><a href="cloud-development.html">Cloud Development</a></div>
+                        <div class="col-sm-6"><a href="webentwicklung-berlin.html">Software- &amp; Webentwicklung</a></div>
+                        <div class="col-sm-6"><a href="php-programmierung-berlin.html">PHP-Entwicklung</a></div>
+                        <div class="col-sm-6"><a href="shopify-development.html">Shopify Development</a></div>
+                        <div class="col-sm-6"><a href="performanceoptimierung-berlin.html">Performance-Optimierung</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team">
+        <div class="container my-4 my-lg-5">
+            <div class="row">
+                <div class="col-12 mb-5">
+                    <p class="section-label"><span></span> Team</p>
+                    <h2 class="section-title">Zwei erfahrene Entwickler. Direkte Zusammenarbeit.</h2>
+                    <p class="mt-4 mb-0 fs-5 lh-lg mw-copy">Seleos ist ein eingespieltes Senior-Engineering-Team aus Berlin. Wir verbinden langjährige Softwareentwicklung mit produktivem KI-Einsatz, Security Engineering und technischer Compliance-Umsetzung.</p>
+                </div>
+            </div>
+            <div class="row gx-3 gx-md-5">
                 <div class="col-md-6">
                     <picture>
                         <source srcset="assets/images/team-ag.webp" type="image/webp">
                         <source srcset="assets/images/team-ag.png" type="image/png">
-                        <img src="assets/images/team-ag.png" width="160" height="160" alt="Andreas Gallien" loading="lazy" class="mx-auto mx-md-0 d-block">
+                        <img src="assets/images/team-ag.png" width="160" height="160" alt="Andreas Gallien" class="mx-auto mx-md-0 d-block">
                     </picture>
-                    <div class="d-flex flex-row mt-5 pb-3 dashed-end">
+                    <div class="d-flex flex-row mt-4 pb-3 dashed-end">
                         <div class="flex-grow-1">
                             <strong>Andreas Gallien</strong><br>
-                            M.Sc. in Wirtschaftsinformatik
+                            M.Sc. Wirtschaftsinformatik
                         </div>
                         <div class="d-flex align-items-end justify-content-end">
-                            <a href="https://www.linkedin.com/in/andreas-gallien-b5397049/" target="_blank" class="me-2"><img src="assets/images/team-icon-linkedin.svg" width="30" height="30" alt="LinkdIn"></a>
-                            <a href="https://www.xing.com/profile/Andreas_Gallien/cv" target="_blank"><img src="assets/images/team-icon-xing.svg" width="30" height="30" alt="Xing"></a>
+                            <a href="https://www.linkedin.com/in/andreas-gallien-b5397049/" target="_blank" rel="noopener noreferrer" class="me-2"><img src="assets/images/team-icon-linkedin.svg" width="30" height="30" alt="Andreas Gallien auf LinkedIn"></a>
+                            <a href="https://www.xing.com/profile/Andreas_Gallien/cv" target="_blank" rel="noopener noreferrer"><img src="assets/images/team-icon-xing.svg" width="30" height="30" alt="Andreas Gallien auf Xing"></a>
                         </div>
                     </div>
-                    <ul class="mt-4 list-bullet">
-                        <li>Geschäftsführer und Ideengeber der Seleos</li>
-                        <li>mehrjährige Erfahrung in der Fullstack-Webentwicklung</li>
-                        <li>umfangreiche Kenntnisse in agiler und digitaler Transformation</li>
-                    </ul>
+                    <p class="mt-4">Geschäftsführer mit Schwerpunkten in Softwarearchitektur, KI-gestütztem Engineering, Security und technischer Compliance-Umsetzung.</p>
                 </div>
-                <div class="col-md-6 mt-5 mt-lg-0">
+                <div class="col-md-6 mt-5 mt-md-0">
                     <picture>
                         <source srcset="assets/images/team-ob.webp" type="image/webp">
                         <source srcset="assets/images/team-ob.png" type="image/png">
-                        <img src="assets/images/team-ob.png" width="160" height="160" alt="Olaf Buchholz" loading="lazy" class="mx-auto mx-md-0 d-block">
+
+                        <img src="assets/images/team-ob.png" width="160" height="160" alt="Olaf Buchholz" class="mx-auto mx-md-0 d-block">
                     </picture>
-                    <div class="d-flex flex-row mt-5 pb-3 dashed-end">
+                    <div class="d-flex flex-row mt-4 pb-3 dashed-end">
                         <div class="flex-grow-1">
                             <strong>Olaf Buchholz</strong><br>
-                            M.Sc. in Wirtschaftsinformatik
+                            M.Sc. Wirtschaftsinformatik
                         </div>
                         <div class="d-flex align-items-end justify-content-end">
-                            <a href="https://www.linkedin.com/in/olaf-buchholz-a247026b/" target="_blank" class="me-2" ><img src="assets/images/team-icon-linkedin.svg" width="30" height="30" alt="LinkdIn"></a>
-                            <a href="https://www.xing.com/profile/Olaf_Buchholz3/cv" target="_blank"><img src="assets/images/team-icon-xing.svg" width="30" height="30" alt="Xing"></a>
+                            <a href="https://www.linkedin.com/in/olaf-buchholz-a247026b/" target="_blank" rel="noopener noreferrer" class="me-2"><img src="assets/images/team-icon-linkedin.svg" width="30" height="30" alt="Olaf Buchholz auf LinkedIn"></a>
+                            <a href="https://www.xing.com/profile/Olaf_Buchholz3/cv" target="_blank" rel="noopener noreferrer"><img src="assets/images/team-icon-xing.svg" width="30" height="30" alt="Olaf Buchholz auf Xing"></a>
                         </div>
                     </div>
-                    <ul class="mt-4 list-bullet">
-                        <li>PHP-Experte</li>
-                        <li>mehrjährige Erfahrung in der PHP-Anwendungsentwicklung</li>
-                        <li>umfangreiche Kenntnisse in der Automatisierung und Prozessoptimierung</li>
-                    </ul>
+                    <p class="mt-4">Senior Software Engineer mit Schwerpunkten in Backend-Systemen, Automatisierung, Prozessoptimierung und Qualitätssicherung.</p>
                 </div>
             </div>
         </div>
-        <div class="row gx-0 pt-5">
-            <div class="col-12">
-                <picture>
-                    <source srcset="assets/images/footer-01.webp, assets/images/footer-01@2x.webp 2x" media="(min-width:750px)" type="image/webp">
-                    <source srcset="assets/images/footer-01.jpg, assets/images/footer-01@2x.jpg 2x" media="(min-width:750px)" type="image/jpeg">
-                    <img src="assets/images/footer-01-mobil.jpg" width="750" height="750" alt="Footer" loading="lazy" class="w-100 img-fluid">
-                </picture>
+    </section>
+
+    <section id="trust">
+        <div class="container my-4 my-lg-5">
+            <div class="row">
+                <div class="col-12 mb-4">
+                    <p class="section-label"><span></span> Nachweisbare Erfahrung</p>
+                    <h2 class="section-title">KI-gestützte Entwicklung mit kontrollierbarer Qualität</h2>
+                </div>
+            </div>
+            <div class="row gx-lg-5 align-items-start">
+                <div class="col-lg-5 mb-4 mb-lg-0">
+                    <p class="fs-5 lh-lg">Für ein umfangreiches produktives Softwaresystem setzen wir KI-Werkzeuge über den gesamten Engineering-Zyklus ein – von Analyse und Implementierung bis zu Tests, Reviews und Dokumentation.</p>
+                    <p class="mb-0">Diese praktische Erfahrung übertragen wir auf Kundenprojekte: mit klaren Architekturregeln, automatisierter Qualitätssicherung, integrierten Security-Prüfungen und nachvollziehbaren Freigaben.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="proof-case">
+                        <div><strong>Ausgangslage</strong><span>Komplexes SaaS-System mit API-, Web-, Cloud- und Integrationsarchitektur</span></div>
+                        <div><strong>Engineering-Modell</strong><span>Zwei verantwortliche Entwickler, unterstützt durch KI-Werkzeuge und verbindliche Architekturregeln</span></div>
+                        <div><strong>Qualitätssicherung</strong><span>Automatisierte Backend-, Frontend- und End-to-End-Prüfungen, Security-Gates und strukturierte Reviews</span></div>
+                        <div><strong>Nachweis</strong><span>Reproduzierbare Prüfungen, technische Spezifikationen, Release Evidence und nachvollziehbare Freigaben</span></div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+
+    <section id="faq" class="bg-soft">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-12">
+                    <p class="section-label"><span></span> Häufige Fragen</p>
+                    <h2 class="section-title mb-5">Was Sie vor dem ersten Gespräch wissen sollten</h2>
+                    <div class="accordion accordion-flush" id="faq-accordion">
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="faq-heading-one"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq-one" aria-expanded="true" aria-controls="faq-one">Was bedeutet KI-gestütztes Engineering bei Seleos?</button></h3>
+                            <div id="faq-one" class="accordion-collapse collapse show" aria-labelledby="faq-heading-one" data-bs-parent="#faq-accordion"><div class="accordion-body">Wir entwickeln produktive Software mit KI-Werkzeugen. Architektur, Qualitätssicherung, Security, fachliche Entscheidungen und Freigaben bleiben in der Verantwortung unserer erfahrenen Entwickler.</div></div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="faq-heading-two"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-two" aria-expanded="false" aria-controls="faq-two">Kann Seleos extern entwickelte Software bewerten?</button></h3>
+                            <div id="faq-two" class="accordion-collapse collapse" aria-labelledby="faq-heading-two" data-bs-parent="#faq-accordion"><div class="accordion-body">Ja. Wir analysieren Architektur, Code, Schnittstellen, Datenflüsse, Cloud-Konfiguration, Teststrategie und Security. Sie erhalten eine unabhängige Bewertung mit konkreten Handlungsempfehlungen und auf Wunsch Umsetzungsbegleitung.</div></div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="faq-heading-three"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-three" aria-expanded="false" aria-controls="faq-three">Führt Seleos Penetrationstests durch?</button></h3>
+                            <div id="faq-three" class="accordion-collapse collapse" aria-labelledby="faq-heading-three" data-bs-parent="#faq-accordion"><div class="accordion-body">Ja, für schriftlich autorisierte und klar abgegrenzte Webanwendungen, APIs und KI-gestützte Systeme. Scope, Testfenster, Methoden, Notfallkontakt und Ausschlüsse werden vorab vereinbart. Die Ergebnisse sind reproduzierbar und können nach der Behebung erneut geprüft werden.</div></div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="faq-heading-four"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-four" aria-expanded="false" aria-controls="faq-four">Wie unterstützt Seleos bei NIS2 und CRA?</button></h3>
+                            <div id="faq-four" class="accordion-collapse collapse" aria-labelledby="faq-heading-four" data-bs-parent="#faq-accordion"><div class="accordion-body">Wir etablieren technische und organisatorische Prozesse – von Risiko- und Gap-Analyse über Secure Development, Incident Response, SBOM und Vulnerability Handling bis zu belastbaren, prüfbaren Nachweisen.</div></div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="faq-heading-five"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-five" aria-expanded="false" aria-controls="faq-five">Bietet Seleos laufende Betreuung an?</button></h3>
+                            <div id="faq-five" class="accordion-collapse collapse" aria-labelledby="faq-heading-five" data-bs-parent="#faq-accordion"><div class="accordion-body">Ja. Assessments und Umsetzungsprojekte können in eine kontinuierliche Zusammenarbeit übergehen. Gemeinsam pflegen wir Maßnahmen, technische Kontrollen und Evidenzen und begleiten Security-, Architektur- und Prozessänderungen.</div></div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="faq-heading-six"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-six" aria-expanded="false" aria-controls="faq-six">Ersetzt KI bei Seleos erfahrene Entwickler?</button></h3>
+                            <div id="faq-six" class="accordion-collapse collapse" aria-labelledby="faq-heading-six" data-bs-parent="#faq-accordion"><div class="accordion-body">Nein. KI erhöht unsere Arbeitskapazität bei klar abgegrenzten Aufgaben. Architekturentscheidungen, Risikobewertung, Security-Prüfung, fachliche Priorisierung und Freigabe verantworten weiterhin die erfahrenen Entwickler.</div></div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="faq-heading-seven"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-seven" aria-expanded="false" aria-controls="faq-seven">Arbeitet Seleos nur in Berlin?</button></h3>
+                            <div id="faq-seven" class="accordion-collapse collapse" aria-labelledby="faq-heading-seven" data-bs-parent="#faq-accordion"><div class="accordion-body">Nein. Wir arbeiten mit Unternehmen in Deutschland, Österreich und der Schweiz. Abstimmungen und Umsetzung sind remote möglich; Vor-Ort-Termine vereinbaren wir bei Bedarf.</div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="contact">
         <div class="container mw-100 bg-dark-blue-r text-white">
             <div class="row gx-0">
                 <div class="col-12">
-                    <div class="container mb-5">
-                        <div class="row">
-                            <div class="col-lg-7 mt-5">
-                                <h3 class="mb-4 text-white mw-400">Sie suchen Spezialisten für Ihr nächstes Projekt?</h3>
-                                <p class="mb-5">Rufen Sie uns an oder schreiben Sie uns.<br>Wir beraten Sie gern.</p>
-                                <div class="d-flex flex-column flex-md-row mb-3">
-                                    <a class="btn btn-lg btn-primary btn-phone w-100 mb-2 mb-md-0 me-md-2" href="tel:+493025785767">Anrufen</a>
-                                    <a class="btn btn-lg btn-primary btn-mail w-100 ms-0 ms-md-2" href="mailto:info@seleos.de">E-Mail schreiben</a>
-                                </div>
+                    <div class="container my-5">
+                        <div class="row gx-lg-5">
+                            <div class="col-lg-7">
+                                <p class="section-label mb-4 text-white"><span></span> Kontakt</p>
+                                <h2 class="section-title mb-4 text-white">Welches Problem sollen wir für Sie lösen?</h2>
+                                <p class="mb-4 fs-5 lh-lg">Sie möchten KI produktiv einsetzen, eine Software oder Architektur unabhängig bewerten lassen oder NIS2-/CRA-Anforderungen technisch umsetzen? Beschreiben Sie uns kurz Ihre Ausgangslage. Wir sagen Ihnen offen, ob und wie wir sinnvoll unterstützen können.</p>
+                                <div class="d-flex flex-column flex-md-row gap-3"><a class="btn btn-lg btn-primary btn-mail w-100" href="mailto:info@seleos.de">E-Mail schreiben</a><a class="btn btn-lg btn-primary btn-phone w-100" href="tel:+493025785767">Direkt anrufen</a></div>
+                                <p class="small mt-4 mb-0">Vertrauliche Erstbewertung · Direkter Kontakt zu den Entwicklern · Klare Empfehlung für den nächsten sinnvollen Schritt</p>
                             </div>
                             <div class="col-lg-5 d-flex mt-5 justify-content-lg-center text-white">
                                 <div class="mt-lg-4">
-                                    <h2 class="mb-4 text-white"><span></span>Kontakt</h2>
-                                    <p class="mb-4">
-                                        Seleos GmbH<br>
-                                        Schwarzmeerstraße 42<br>
-                                        10319 Berlin
-                                    </p>
-                                    <p>
-                                        T&nbsp;&nbsp;<a href="tel:+493025785767" class="text-white">+49 (0)30 / 2578 5767</a><br>
-                                        <a href="mailto:info@seleos.de" class="text-white">info@seleos.de</a>
-                                    </p>
+                                    <p class="section-label mb-4 text-white"><span></span> Seleos GmbH</p>
+                                    <p class="mb-4">Schwarzmeerstraße 42<br>10319 Berlin</p>
+                                    <p class="mb-0">T&nbsp;&nbsp;<a href="tel:+493025785767" class="text-white">+49 (0)30 / 2578 5767</a><br><a href="mailto:info@seleos.de" class="text-white">info@seleos.de</a></p>
                                 </div>
                             </div>
                         </div>
@@ -410,56 +505,206 @@
             </div>
         </div>
     </section>
-</article>
+</main>
 
 <footer>
     <div class="container">
         <div class="row py-3">
             <div class="col-12 order-lg-1 col-lg-4 d-flex align-items-center justify-content-center">
                 <div class="w-100 pb-3 pb-lg-0 text-center dashed-end">
-                    <a href="https://linkedin.com/company/seleos-gmbh" target="_blank" class="px-2"><img src="assets/images/icon-linkedin.svg" width="30" height="30" alt="LinkedIn"></a>
-                    <a href="https://www.xing.com/pages/seleosgmbh" target="_blank" class="px-2"><img src="assets/images/icon-xing.svg" width="30" height="30" alt="Xing"></a>
-                    <a href="https://www.facebook.com/Seleos/" target="_blank" class="px-2"><img src="assets/images/icon-facebook.svg" width="30" height="30" alt="Facebook"></a>
-                    <a href="https://twitter.com/seleos" target="_blank" class="px-2"><img src="assets/images/icon-x.svg" width="30" height="30" alt="X"></a>
+                    <a href="https://linkedin.com/company/seleos-gmbh" target="_blank" rel="noopener noreferrer" class="px-2"><img src="assets/images/icon-linkedin.svg" width="30" height="30" alt="Seleos auf LinkedIn"></a>
+                    <a href="https://www.xing.com/pages/seleosgmbh" target="_blank" rel="noopener noreferrer" class="px-2"><img src="assets/images/icon-xing.svg" width="30" height="30" alt="Seleos auf Xing"></a>
+                    <a href="https://www.facebook.com/Seleos/" target="_blank" rel="noopener noreferrer" class="px-2"><img src="assets/images/icon-facebook.svg" width="30" height="30" alt="Seleos auf Facebook"></a>
+                    <a href="https://twitter.com/seleos" target="_blank" rel="noopener noreferrer" class="px-2"><img src="assets/images/icon-x.svg" width="30" height="30" alt="Seleos auf X"></a>
                 </div>
             </div>
             <div class="col-6 order-lg-0 col-lg-4 d-flex mt-3 mt-lg-0 align-items-end align-items-lg-center">
-                <p class="my-0 text-uppercase">&copy; Seleos GmbH </p>
+                <p class="my-0 text-uppercase">&copy; Seleos GmbH</p>
             </div>
             <div class="col-6 order-lg-2 col-lg-4 d-flex mt-3 mt-lg-0 align-items-end align-items-lg-center justify-content-end">
-                <p class="my-0 text-uppercase text-end"><a href="agb.html" class="d-block">AGB</a><a href="datenschutz.html" class="d-block d-lg-inline">Datenschutz</a><span class="d-none d-lg-inline"> / </span><a href="impressum.html">Impressum</a></p>
+                <p class="my-0 text-uppercase text-end"><a href="agb.html">AGB</a> / <a href="datenschutz.html">Datenschutz</a> / <a href="impressum.html">Impressum</a></p>
             </div>
         </div>
     </div>
 </footer>
 
-<script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="assets/scripts/custom.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="assets/scripts/custom.js?v=20260802"></script>
 
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Seleos GmbH",
-    "description": "Seleos entwickelt individuelle Webanwendungen, Shopify-Integrationen und performante PHP-/Cloud-Systeme für Start-ups und KMU.",
-    "logo": "https://www.seleos.de/assets/images/logo.svg",
-    "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Berlin, Germany",
-        "postalCode": "10319",
-        "streetAddress": "Schwarzmeerstr. 42"
-    },
-    "telephone": "+49 30 25785767",
-    "email": "info@seleos.de",
-    "url": "https://www.seleos.de",
-    "areaServed": ["Berlin", "Deutschland", "DACH"],
-    "knowsAbout": [
-        "Webentwicklung",
-        "PHP-Entwicklung",
-        "Shopify Development",
-        "Cloud Development",
-        "Performance-Optimierung",
-        "Technologieberatung"
+    "@graph": [
+        {
+            "@type": "Organization",
+            "@id": "https://www.seleos.de/#organization",
+            "name": "Seleos GmbH",
+            "url": "https://www.seleos.de/",
+            "description": "Seleos entwickelt KI-gestützte Software, bewertet Softwarearchitekturen und Security und begleitet die technische Umsetzung von NIS2 und Cyber Resilience Act.",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://www.seleos.de/assets/images/logo.svg"
+            },
+            "image": "https://www.seleos.de/assets/images/seleos_fb.jpg",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Schwarzmeerstraße 42",
+                "postalCode": "10319",
+                "addressLocality": "Berlin",
+                "addressCountry": "DE"
+            },
+            "telephone": "+49 30 25785767",
+            "email": "info@seleos.de",
+            "areaServed": ["DE", "AT", "CH"],
+            "sameAs": [
+                "https://linkedin.com/company/seleos-gmbh",
+                "https://www.xing.com/pages/seleosgmbh"
+            ],
+            "knowsAbout": [
+                "KI-gestütztes Engineering",
+                "KI-gestützte Softwareentwicklung",
+                "Softwarearchitektur",
+                "Application Security",
+                "Penetrationstests",
+                "NIS2",
+                "Cyber Resilience Act",
+                "Secure Software Development",
+                "Continuous Security & Compliance Management",
+                "Cloud Development"
+            ]
+        },
+        {
+            "@type": "WebSite",
+            "@id": "https://www.seleos.de/#website",
+            "url": "https://www.seleos.de/",
+            "name": "Seleos GmbH",
+            "inLanguage": "de-DE",
+            "publisher": {"@id": "https://www.seleos.de/#organization"}
+        },
+        {
+            "@type": "WebPage",
+            "@id": "https://www.seleos.de/#webpage",
+            "url": "https://www.seleos.de/",
+            "name": "KI-gestütztes Engineering, Security & NIS2/CRA | Seleos",
+            "description": "Seleos entwickelt Software mit KI, bewertet Architekturen und Security und etabliert NIS2-/CRA-Prozesse.",
+            "inLanguage": "de-DE",
+            "dateModified": "2026-08-07",
+            "isPartOf": {"@id": "https://www.seleos.de/#website"},
+            "about": {"@id": "https://www.seleos.de/#organization"}
+        },
+        {
+            "@type": "ItemList",
+            "@id": "https://www.seleos.de/#services",
+            "name": "Leistungen der Seleos GmbH",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "item": {
+                        "@type": "Service",
+                        "@id": "https://www.seleos.de/ki-gestuetzte-softwareentwicklung.html#service",
+                        "url": "https://www.seleos.de/ki-gestuetzte-softwareentwicklung.html",
+                        "name": "Produktive KI-gestützte Softwareentwicklung",
+                        "description": "Softwareentwicklung mit KI-Werkzeugen, verbindlichen Architekturregeln, automatisierter Qualitätssicherung, Security-Prüfungen und menschlicher Freigabe.",
+                        "provider": {"@id": "https://www.seleos.de/#organization"},
+                        "areaServed": ["DE", "AT", "CH"]
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "item": {
+                        "@type": "Service",
+                        "@id": "https://www.seleos.de/software-architektur-bewertung.html#service",
+                        "url": "https://www.seleos.de/software-architektur-bewertung.html",
+                        "name": "Software- und Architekturbewertung",
+                        "description": "Unabhängige Bewertung bestehender und extern entwickelter Software hinsichtlich Qualität, Wartbarkeit, Architektur, Security und Betrieb.",
+                        "provider": {"@id": "https://www.seleos.de/#organization"},
+                        "areaServed": ["DE", "AT", "CH"]
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "item": {
+                        "@type": "Service",
+                        "@id": "https://www.seleos.de/security-review-software.html#service",
+                        "url": "https://www.seleos.de/security-review-software.html",
+                        "name": "Security Reviews und Penetrationstests",
+                        "description": "Autorisierte Security-Prüfungen für Webanwendungen, APIs, Cloud-nahe Architekturen und KI-gestützte Systeme.",
+                        "provider": {"@id": "https://www.seleos.de/#organization"},
+                        "areaServed": ["DE", "AT", "CH"]
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 4,
+                    "item": {
+                        "@type": "Service",
+                        "@id": "https://www.seleos.de/nis2-umsetzung.html#service",
+                        "url": "https://www.seleos.de/nis2-umsetzung.html",
+                        "name": "Technische NIS2- und CRA-Umsetzung",
+                        "description": "Technische und organisatorische Umsetzungsbegleitung für Prozesse, Kontrollen und Nachweise nach NIS2 und Cyber Resilience Act.",
+                        "provider": {"@id": "https://www.seleos.de/#organization"},
+                        "areaServed": ["DE", "AT", "CH"]
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 5,
+                    "item": {
+                        "@type": "Service",
+                        "@id": "https://www.seleos.de/continuous-security-compliance-management.html#service",
+                        "url": "https://www.seleos.de/continuous-security-compliance-management.html",
+                        "name": "Continuous Security & Compliance Management",
+                        "description": "Laufende technische Betreuung für Security, Softwarequalität, NIS2- und CRA-Maßnahmen, Evidenzen und Remediation.",
+                        "provider": {"@id": "https://www.seleos.de/#organization"},
+                        "areaServed": ["DE", "AT", "CH"]
+                    }
+                }
+            ]
+        },
+        {
+            "@type": "FAQPage",
+            "@id": "https://www.seleos.de/#faq",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "Was bedeutet KI-gestütztes Engineering bei Seleos?",
+                    "acceptedAnswer": {"@type": "Answer", "text": "Seleos entwickelt produktive Software mit KI-Werkzeugen. Architektur, Qualitätssicherung, Security, fachliche Entscheidungen und Freigaben bleiben in der Verantwortung erfahrener Entwickler."}
+                },
+                {
+                    "@type": "Question",
+                    "name": "Kann Seleos extern entwickelte Software bewerten?",
+                    "acceptedAnswer": {"@type": "Answer", "text": "Ja. Seleos analysiert Architektur, Code, Schnittstellen, Datenflüsse, Cloud-Konfiguration, Teststrategie und Security und liefert konkrete Handlungsempfehlungen."}
+                },
+                {
+                    "@type": "Question",
+                    "name": "Führt Seleos Penetrationstests durch?",
+                    "acceptedAnswer": {"@type": "Answer", "text": "Ja, für schriftlich autorisierte und klar abgegrenzte Webanwendungen, APIs und KI-gestützte Systeme. Scope, Testfenster, Methoden und Ausschlüsse werden vorab vereinbart."}
+                },
+                {
+                    "@type": "Question",
+                    "name": "Wie unterstützt Seleos bei NIS2 und CRA?",
+                    "acceptedAnswer": {"@type": "Answer", "text": "Seleos etabliert technische und organisatorische Prozesse von Risiko- und Gap-Analyse über Secure Development, Incident Response, SBOM und Vulnerability Handling bis zu belastbaren, prüfbaren Nachweisen."}
+                },
+                {
+                    "@type": "Question",
+                    "name": "Bietet Seleos laufende Betreuung an?",
+                    "acceptedAnswer": {"@type": "Answer", "text": "Ja. Assessments und Umsetzungsprojekte können in eine kontinuierliche Zusammenarbeit zur Pflege von Maßnahmen, technischen Kontrollen und Evidenzen übergehen."}
+                },
+                {
+                    "@type": "Question",
+                    "name": "Ersetzt KI bei Seleos erfahrene Entwickler?",
+                    "acceptedAnswer": {"@type": "Answer", "text": "Nein. KI erhöht die Arbeitskapazität bei klar abgegrenzten Aufgaben. Architekturentscheidungen, Risikobewertung, Security-Prüfung, Priorisierung und Freigabe verantworten die erfahrenen Entwickler."}
+                },
+                {
+                    "@type": "Question",
+                    "name": "Arbeitet Seleos nur in Berlin?",
+                    "acceptedAnswer": {"@type": "Answer", "text": "Nein. Seleos arbeitet mit Unternehmen in Deutschland, Österreich und der Schweiz. Remote-Zusammenarbeit und Vor-Ort-Termine sind möglich."}
+                }
+            ]
+        }
     ]
 }
 </script>

@@ -6,6 +6,11 @@
   "license": "SEE LICENSE IN LICENSE",
   "private": true,
   "main": "index.html",
+  "scripts": {
+    "generate": "node scripts/generate-service-pages.mjs",
+    "validate": "node scripts/validate-site.mjs",
+    "build": "npm run generate && npm run validate"
+  },
   "dependencies": {
     "bootstrap": "5.2.3"
   }

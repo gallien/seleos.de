@@ -24,7 +24,6 @@ const scrollToTarget = function(target) {
     if (offsetPosition < 0) {
         offsetPosition = 0;
     }
-    console.log(offsetPosition);
     window.scrollTo({
         top: offsetPosition,
         behavior: 'smooth'
@@ -44,14 +43,42 @@ const ready = function() {
     const navLinks = document.querySelectorAll('.nav-link');
     navLinks.forEach(element => element.addEventListener('click', function(event) {
         const anchor = event.target.getAttribute('href');
-        const div = document.querySelector(anchor);
-        console.log(div);
+        const div = anchor && anchor.startsWith('#') ? document.querySelector(anchor) : null;
         if (div) {
+            event.preventDefault();
             scrollToTarget(div);
         } else {
             window.location = anchor;
         }
     }));
+
+    const navbar = document.getElementById('navbar-collapse');
+    const navbarToggle = document.querySelector('.navbar-toggler');
+    if (navbar && navbarToggle) {
+        navbar.addEventListener('shown.bs.collapse', function() {
+            navbarToggle.setAttribute('aria-label', 'Navigation schließen');
+        });
+        navbar.addEventListener('hidden.bs.collapse', function() {
+            navbarToggle.setAttribute('aria-label', 'Navigation öffnen');
+        });
+    }
+
+    // Fristen-Countdown: bleibt ohne Redaktionsaufwand aktuell und wird nach
+    // Ablauf der Frist ausgeblendet, statt einen falschen Stand anzuzeigen.
+    document.querySelectorAll('.timeline-countdown[data-deadline]').forEach(function(element) {
+        const deadline = new Date(`${element.dataset.deadline}T00:00:00Z`);
+        if (Number.isNaN(deadline.getTime())) {
+            return;
+        }
+        const now = new Date();
+        const today = Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate());
+        const days = Math.round((deadline.getTime() - today) / 86400000);
+        if (days <= 0) {
+            return;
+        }
+        element.textContent = days === 1 ? 'noch 1 Tag' : `noch ${days} Tage`;
+        element.hidden = false;
+    });
 };
 
 if (window.addEventListener) {

@@ -1,0 +1,77 @@
+name: Deploy GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Repository auschecken
+        uses: actions/checkout@v4
+
+      - name: Node.js einrichten
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Seiten generieren und prüfen
+        run: npm run build
+
+      - name: Öffentliches Pages-Artefakt erstellen
+        run: |
+          mkdir -p _site
+          rsync -a \
+            --exclude '/_site/' \
+            --exclude '/.git/' \
+            --exclude '/.github/' \
+            --exclude '/.idea/' \
+            --exclude '/.claude/' \
+            --exclude '/scripts/' \
+            --exclude '/node_modules/' \
+            --exclude '*.md' \
+            --exclude '/package.json' \
+            --exclude '/yarn.lock' \
+            --exclude '/LICENSE' \
+            --exclude '/.gitignore' \
+            --exclude '.DS_Store' \
+            --exclude '/.htaccess' \
+            ./ _site/
+          mkdir -p _site/node_modules/bootstrap
+          cp -R node_modules/bootstrap/dist _site/node_modules/bootstrap/
+          test ! -e _site/scripts
+          test -f _site/index.html
+          test -f _site/.well-known/security.txt
+          test -f _site/node_modules/bootstrap/dist/css/bootstrap.min.css
+
+      - name: GitHub Pages konfigurieren
+        uses: actions/configure-pages@v5
+
+      - name: Pages-Artefakt hochladen
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+          include-hidden-files: true
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: GitHub Pages veröffentlichen
+        id: deployment
+        uses: actions/deploy-pages@v4

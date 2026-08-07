@@ -1,0 +1,4 @@
+Contact: mailto:info@seleos.de
+Expires: 2027-08-07T23:59:59Z
+Preferred-Languages: de, en
+Canonical: https://www.seleos.de/.well-known/security.txt
