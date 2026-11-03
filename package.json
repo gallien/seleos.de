@@ -9,9 +9,14 @@
   "scripts": {
     "generate": "node scripts/generate-service-pages.mjs",
     "validate": "node scripts/validate-site.mjs",
-    "build": "npm run generate && npm run validate"
+    "build:assets": "node scripts/build-assets.mjs",
+    "build": "npm run generate && npm run build:assets && npm run validate"
   },
   "dependencies": {
     "bootstrap": "5.2.3"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2",
+    "purgecss": "8.0.0"
   }
 }

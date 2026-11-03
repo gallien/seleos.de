@@ -28,7 +28,9 @@ jobs:
           node-version: 22
 
       - name: Seiten generieren und prüfen
-        run: npm run build
+        run: |
+          npm ci
+          npm run build
 
       - name: Öffentliches Pages-Artefakt erstellen
         run: |
@@ -43,18 +45,18 @@ jobs:
             --exclude '/node_modules/' \
             --exclude '*.md' \
             --exclude '/package.json' \
+            --exclude '/package-lock.json' \
             --exclude '/yarn.lock' \
             --exclude '/LICENSE' \
             --exclude '/.gitignore' \
             --exclude '.DS_Store' \
             --exclude '/.htaccess' \
             ./ _site/
-          mkdir -p _site/node_modules/bootstrap
-          cp -R node_modules/bootstrap/dist _site/node_modules/bootstrap/
           test ! -e _site/scripts
           test -f _site/index.html
           test -f _site/.well-known/security.txt
-          test -f _site/node_modules/bootstrap/dist/css/bootstrap.min.css
+          test -f _site/assets/styles/site.min.css
+          test -f _site/assets/scripts/site.min.js
 
       - name: GitHub Pages konfigurieren
         uses: actions/configure-pages@v5

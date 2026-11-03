@@ -715,16 +715,13 @@ nav.navbar .navbar-collapse {
     }
 
     #header {
-        background-image: url('../images/background.jpg');
+        background-image: url('../images/background.webp');
         background-position: center right;
         background-repeat: no-repeat;
         background-color: #0b1b4c;;
         background-size: contain;
     }
 
-    .webp #header {
-        background-image: url('../images/background.webp');
-    }
 }
 
 /* Services */
@@ -952,6 +949,8 @@ footer p {
 
 .timeline-item h3 {
     margin-bottom: 0.5rem;
+    hyphens: auto;
+    overflow-wrap: anywhere;
 }
 
 .timeline-marker {

@@ -557,8 +557,7 @@ const renderPage = (page) => {
     <meta name="twitter:description" content="${escapeHtml(page.description)}">
     <meta name="twitter:image" content="https://www.seleos.de/assets/images/seleos_fb.jpg">
     <link rel="canonical" href="${url}">
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" media="screen">
-    <link rel="stylesheet" href="assets/styles/custom.css?v=20260802" media="screen">
+    <link rel="stylesheet" href="assets/styles/site.min.css" media="screen">
     <link rel="apple-touch-icon" sizes="57x57" href="assets/images/icons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="assets/images/icons/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="assets/images/icons/apple-icon-72x72.png">
@@ -630,13 +629,13 @@ const renderPage = (page) => {
     </div></div></div></div></section>
     <section id="faq"><div class="container mb-5 mw-100 bg-list-phone"><div class="row gx-0"><div class="col-12"><div class="container py-5"><div class="row"><div class="col-12">
         <p class="section-label"><span></span> Häufige Fragen</p><h2 class="section-title mb-5">Wichtige Fragen vor dem Projektstart</h2>
-        <div class="accordion accordion-flush" id="faq-accordion">${page.faqs.map(([question, answer], index) => `<div class="accordion-item"><h3 class="accordion-header" id="faq-heading-${index}"><button class="accordion-button${index ? ' collapsed' : ''}" type="button" data-bs-toggle="collapse" data-bs-target="#faq-${index}" aria-expanded="${index ? 'false' : 'true'}" aria-controls="faq-${index}">${escapeHtml(question)}</button></h3><div id="faq-${index}" class="accordion-collapse collapse${index ? '' : ' show'}" aria-labelledby="faq-heading-${index}" data-bs-parent="#faq-accordion"><div class="accordion-body">${escapeHtml(answer)}</div></div></div>`).join('')}</div>
+        <div class="accordion accordion-flush" id="faq-accordion">${page.faqs.map(([question, answer], index) => `<div class="accordion-item"><h3 class="accordion-header" id="faq-heading-${index}"><button class="accordion-button${index ? ' collapsed' : ''}" type="button" data-bs-toggle="collapse" data-bs-target="#faq-${index}" aria-expanded="${index ? 'false' : 'true'}" aria-controls="faq-${index}">${escapeHtml(question)}</button></h3><section id="faq-${index}" class="accordion-collapse collapse${index ? '' : ' show'}" aria-labelledby="faq-heading-${index}" data-bs-parent="#faq-accordion"><div class="accordion-body">${escapeHtml(answer)}</div></section></div>`).join('')}</div>
     </div></div></div></div></div></div></section>
     <section><div class="container my-4 my-lg-5"><p class="section-label"><span></span> Verwandte Leistungen</p><h2 class="section-title">Technische Themen im Zusammenhang</h2><div class="row legacy-links mt-3">${page.related.map(([label, href]) => `<div class="col-md-4 mb-3"><a href="${href}">${escapeHtml(label)}</a></div>`).join('')}</div></div></section>
     <section id="contact"><div class="container mw-100 bg-dark-blue-r text-white"><div class="row gx-0"><div class="col-12"><div class="container mb-5"><div class="row">
         <div class="col-lg-7 mt-5"><h2 class="section-title mb-4 text-white mw-400">Vorhaben oder Risiko gemeinsam einordnen</h2><p class="mb-5">Beschreiben Sie uns kurz Ihre Ausgangslage. Sie sprechen direkt mit den Entwicklern und erhalten eine offene Einschätzung zum nächsten sinnvollen Schritt.</p>
         <div class="d-flex flex-column flex-md-row mb-3"><a class="btn btn-lg btn-primary btn-phone w-100 mb-2 mb-md-0 me-md-2" href="tel:+493025785767">Anrufen</a><a class="btn btn-lg btn-primary btn-mail w-100 ms-0 ms-md-2" href="mailto:info@seleos.de">E-Mail schreiben</a></div></div>
-        <div class="col-lg-5 d-flex mt-5 justify-content-lg-center text-white"><div class="mt-lg-4"><p class="section-label mb-4 text-white"><span></span>Kontakt</p><p class="mb-4">Seleos GmbH<br>Schwarzmeerstraße 42<br>10319 Berlin</p><p>T&nbsp;&nbsp;<a class="text-white" href="tel:+493025785767">+49 (0)30 / 2578 5767</a><br><a class="text-white" href="mailto:info@seleos.de">info@seleos.de</a></p></div></div>
+        <div class="col-lg-5 d-flex mt-5 justify-content-lg-center text-white"><div class="mt-lg-4"><p class="section-label mb-4 text-white"><span></span>Kontakt</p><p class="mb-4">Seleos GmbH<br>Schwarzmeerstraße 42<br>10319 Berlin</p><p>T&nbsp;&nbsp;<a class="text-white" href="tel:+493025785767">+49&nbsp;(0)30&nbsp;/&nbsp;2578&nbsp;5767</a><br><a class="text-white" href="mailto:info@seleos.de">info@seleos.de</a></p></div></div>
     </div></div></div></div></div></section>
 </main>
 <footer><div class="container"><div class="row py-3">
@@ -644,7 +643,7 @@ const renderPage = (page) => {
     <div class="col-6 order-lg-0 col-lg-4 d-flex mt-3 mt-lg-0 align-items-end align-items-lg-center"><p class="my-0 text-uppercase">&copy; Seleos GmbH</p></div>
     <div class="col-6 order-lg-2 col-lg-4 d-flex mt-3 mt-lg-0 align-items-end align-items-lg-center justify-content-end"><p class="my-0 text-uppercase text-end"><a href="agb.html">AGB</a> / <a href="datenschutz.html">Datenschutz</a> / <a href="impressum.html">Impressum</a></p></div>
 </div></div></footer>
-<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script><script src="assets/scripts/custom.js?v=20260802"></script>
+<script defer src="assets/scripts/site.min.js"></script>
 <script type="application/ld+json">${JSON.stringify(structuredData, null, 2).replaceAll('<', '\\u003c')}</script>
 </body></html>`;
 };
@@ -660,7 +659,7 @@ const generatedPageFiles = new Set([
 ]);
 
 for (const page of pages.filter(({file}) => generatedPageFiles.has(file))) {
-  writeFileSync(resolve(root, page.file), renderPage(page));
+  writeFileSync(resolve(root, page.file), renderPage(page).replace(/[ \t]+$/gm, ''));
 }
 
 console.log(`Generated ${generatedPageFiles.size} service pages.`);

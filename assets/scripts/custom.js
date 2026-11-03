@@ -1,20 +1,5 @@
-const checkWebpFeature = function(feature, callback) {
-    const kTestImages = {
-        lossy: "UklGRiIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEADsD+JaQAA3AAAAAA",
-        lossless: "UklGRhoAAABXRUJQVlA4TA0AAAAvAAAAEAcQERGIiP4HAA==",
-        alpha: "UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAARBxAR/Q9ERP8DAABWUDggGAAAABQBAJ0BKgEAAQAAAP4AAA3AAP7mtQAAAA==",
-        animation: "UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA"
-    };
-    let img = new Image();
-    img.onload = function () {
-        const result = (img.width > 0) && (img.height > 0);
-        callback(feature, result);
-    };
-    img.onerror = function () {
-        callback(feature, false);
-    };
-    img.src = "data:image/webp;base64," + kTestImages[feature];
-}
+import 'bootstrap/js/src/collapse.js';
+import 'bootstrap/js/src/scrollspy.js';
 
 const scrollToTarget = function(target) {
     const element = target;
@@ -26,23 +11,14 @@ const scrollToTarget = function(target) {
     }
     window.scrollTo({
         top: offsetPosition,
-        behavior: 'smooth'
+        behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth'
     });
 }
 
 const ready = function() {
-    checkWebpFeature('lossy', function(feature, isSupported) {
-        const element = document.getElementById('top');
-        if (isSupported) {
-            element.classList.add('webp');
-        } else {
-            element.classList.add('no-webp');
-        }
-    });
-
     const navLinks = document.querySelectorAll('.nav-link');
     navLinks.forEach(element => element.addEventListener('click', function(event) {
-        const anchor = event.target.getAttribute('href');
+        const anchor = event.currentTarget.getAttribute('href');
         const div = anchor && anchor.startsWith('#') ? document.querySelector(anchor) : null;
         if (div) {
             event.preventDefault();
@@ -81,8 +57,8 @@ const ready = function() {
     });
 };
 
-if (window.addEventListener) {
-    window.addEventListener('load', ready, false);
-} else if (window.attachEvent) {
-    window.attachEvent('onload', ready);
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', ready, { once: true });
+} else {
+    ready();
 }
