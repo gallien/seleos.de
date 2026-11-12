@@ -1,12 +1,21 @@
 # Seleos GmbH
 
-> Seleos ist ein Senior-Engineering-Team aus Berlin für produktive KI-gestützte Softwareentwicklung, Software- und Architekturbewertung, Application Security, Penetrationstests sowie technische NIS2- und CRA-Umsetzung.
+sol> Seleos ist ein kleines Senior-Engineering-Team aus Berlin, das Software für den Mittelstand entwickelt, modernisiert und absichert – direkt von den Entwicklern, die sie bauen. Zusammenarbeit vor Ort in Berlin oder remote in Deutschland, Österreich und der Schweiz.
 
-Seleos verbindet Softwareentwicklung, Security Engineering und technische Compliance-Umsetzung. Zwei erfahrene Entwickler arbeiten direkt an Analyse, Architektur, Implementierung, Tests und Reviews und setzen KI-Werkzeuge als Produktivitätshebel ein.
+Seleos richtet sich vor allem an mittelständische Unternehmen ohne große eigene IT-Abteilung. Zwei erfahrene Entwickler sind feste Ansprechpartner vom ersten Gespräch bis zum Betrieb: Wer das Problem analysiert, setzt die Lösung auch um – ohne Vertriebs- und Projektleitungs-Overhead. KI-Werkzeuge dienen als Produktivitätshebel; Architekturentscheidungen, Qualitätssicherung und Freigaben verantworten die Entwickler.
+
+## Typische Ausgangslagen
+
+- Alte oder über Jahre gewachsene Software, die nur noch wenige kennen und bei der jede Änderung ein Risiko ist
+- ERP, Shop, Excel und Fachanwendungen, die nicht miteinander verbunden sind
+- Kunden, Versicherungen oder NIS2 fordern Nachweise zur IT-Sicherheit
+- Von einer Agentur gelieferte Software, deren Qualität unabhängig bewertet werden soll
+- Langsame Anwendungen mit Engpässen in Code, Datenbank oder Infrastruktur
+- Neue Werkzeuge wie Kundenportale, interne Tools oder KI-gestützte Auswertungen ohne Großprojekt
 
 ## Kernleistungen
 
-- [Startseite und Leistungsübersicht](https://www.seleos.de/): KI-gestützte Softwareentwicklung, Software- und Architekturbewertung, Security Reviews, Penetrationstests sowie NIS2-/CRA-Umsetzung
+- [Startseite und Leistungsübersicht](https://www.seleos.de/): Softwareentwicklung für den Mittelstand – Modernisierung, Integration, KI-gestützte Entwicklung, Architekturbewertung, Security Reviews, Penetrationstests sowie NIS2-/CRA-Umsetzung
 - [KI-gestützte Softwareentwicklung](https://www.seleos.de/ki-gestuetzte-softwareentwicklung.html): produktive Softwareentwicklung mit KI-Werkzeugen, klaren Architekturregeln, automatisierter Qualitätssicherung, Security-Prüfungen und menschlicher Freigabe
 - [Software- und Architekturbewertung](https://www.seleos.de/software-architektur-bewertung.html): unabhängige Analyse von Qualität, Wartbarkeit, Datenflüssen, Cloud-Betrieb, Security, KI-Einsatz und technischen Risiken
 - [Software Security Review](https://www.seleos.de/security-review-software.html): Threat Modeling, Architektur, Code, Abhängigkeiten, Berechtigungen und Remediation
@@ -28,7 +37,8 @@ Seleos verbindet Softwareentwicklung, Security Engineering und technische Compli
 
 - Unternehmen: Seleos GmbH
 - Standort: Berlin, Deutschland
-- Tätigkeitsgebiet: Deutschland, Österreich und Schweiz
+- Tätigkeitsgebiet: Berlin vor Ort, remote in Deutschland, Österreich und der Schweiz
+- Zielgruppe: mittelständische Unternehmen
 - E-Mail: info@seleos.de
 - Telefon: +49 30 25785767
 - Website: https://www.seleos.de/
