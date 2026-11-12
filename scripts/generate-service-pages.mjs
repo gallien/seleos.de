@@ -407,7 +407,7 @@ const pages = [
     outcome: 'Sie erhalten eine priorisierte Performance-Analyse mit messbarer Ausgangslage, konkreten Maßnahmen und einer dokumentierten Verifikation der erreichten Verbesserung.',
     image: 'assets/images/icon-performance.svg',
     imageAlt: 'Performance-Optimierung für Webanwendungen',
-    scope: ['Performance-Audits für Websites, Shops, APIs und Webanwendungen', 'Core Web Vitals und reale Nutzerpfade', 'CSS, JavaScript, Bilder, Webfonts und Tracking', 'Serverantwort, PHP-/Java-Konfiguration und Hintergrundprozesse', 'SQL-Queries, Indizes, Schema und Locks', 'Browser-, Objekt- und Anwendungscaching', 'Varnish, Redis, CDN und HTTP-Komprimierung', 'Skalierung, Cloud-Betrieb und Monitoring'],
+    scope: ['Performance-Audits für Websites, Shops, APIs und Webanwendungen', 'Core Web Vitals und reale Nutzerpfade', 'CSS, JavaScript, Bilder, Webfonts und Tracking', 'Serverantwort, .NET-, PHP- und Java-Konfiguration und Hintergrundprozesse', 'SQL-Queries, Indizes, Schema und Locks', 'Browser-, Objekt- und Anwendungscaching', 'Varnish, Redis, CDN und HTTP-Komprimierung', 'Skalierung, Cloud-Betrieb und Monitoring'],
     deliverables: [
       ['Performance Audit', 'Messungen für Frontend, Backend, Datenbank und Infrastruktur mit identifizierten Engpässen.'],
       ['Priorisierte Roadmap', 'Quick Wins, technische Risiken und größere Maßnahmen mit erwarteter Wirkung und Umsetzungsaufwand.'],
@@ -417,7 +417,7 @@ const pages = [
     faqs: [
       ['Muss eine langsame Anwendung neu entwickelt werden?', 'Nein. Häufig lassen sich bestehende Systeme durch gezielte Änderungen an Queries, Caching, Assets, Konfiguration oder einzelnen Architekturgrenzen deutlich verbessern.'],
       ['Werden Core Web Vitals geprüft?', 'Ja. Wir analysieren unter anderem Largest Contentful Paint, Interaction to Next Paint und Cumulative Layout Shift sowie die technischen Ursachen dahinter.'],
-      ['Prüft Seleos auch Backend und Datenbanken?', 'Ja. Die Analyse umfasst Anwendungscode, Serverantwort, PHP oder Java, SQL-Queries, Indizes, Locks, Caching, Hintergrundprozesse und Infrastruktur.'],
+      ['Prüft Seleos auch Backend und Datenbanken?', 'Ja. Die Analyse umfasst Anwendungscode, Serverantwort, C#/.NET, PHP oder Java, SQL-Queries, Indizes, Locks, Caching, Hintergrundprozesse und Infrastruktur.'],
       ['Wie wird der Erfolg nachgewiesen?', 'Wir messen vor und nach der Umsetzung unter vergleichbaren Bedingungen und dokumentieren, welche Maßnahmen welche technische Wirkung erreicht haben.']
     ],
     related: [['Websoftware weiterentwickeln', 'webentwicklung-berlin.html'], ['PHP-Anwendung optimieren', 'php-programmierung-berlin.html'], ['Cloud-Betrieb verbessern', 'cloud-development.html']]
