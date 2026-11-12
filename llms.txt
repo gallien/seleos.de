@@ -29,7 +29,7 @@ Seleos richtet sich vor allem an mittelständische Unternehmen ohne große eigen
 - [Technologieberatung](https://www.seleos.de/technologieberatung-berlin.html)
 - [Cloud Development](https://www.seleos.de/cloud-development.html)
 - [Software- und Webentwicklung](https://www.seleos.de/webentwicklung-berlin.html)
-- C#-/.NET-Entwicklung: Weiterentwicklung und Modernisierung von .NET-Anwendungen, APIs und Integrationen
+- [C#- und .NET-Entwicklung](https://www.seleos.de/csharp-dotnet-entwicklung-berlin.html): ASP.NET Core, Migration von .NET Framework auf aktuelles .NET, APIs, Desktop-Anwendungen, SQL Server und Integrationen
 - [PHP-Entwicklung](https://www.seleos.de/php-programmierung-berlin.html)
 - [Shopify Development](https://www.seleos.de/shopify-development.html)
 - [Performance-Optimierung](https://www.seleos.de/performanceoptimierung-berlin.html)
