@@ -426,7 +426,7 @@ const pages = [
 
 const pageDetails = {
   'ki-gestuetzte-softwareentwicklung.html': {
-    fit: ['SaaS- und Softwarehersteller mit Entwicklungs- oder Modernisierungsbedarf', 'Unternehmen, die zusätzliche Engineering-Kapazität ohne großen Overhead benötigen', 'Teams, die Geschwindigkeit erhöhen und Qualität sowie Security kontrollierbar halten wollen'],
+    fit: ['SaaS- und Softwarehersteller mit Entwicklungs- oder Modernisierungsbedarf', 'Unternehmen, die ihr Team durch erfahrene Entwickler ergänzen möchten', 'Teams, die Geschwindigkeit erhöhen und Qualität sowie Security kontrollierbar halten wollen'],
     basis: ['Klares Produktziel und ein gemeinsam abgegrenzter Entwicklungsumfang', 'Verbindliche Architekturregeln und messbare Abnahmekriterien', 'Automatisierte Prüfungen und menschliche Verantwortung für jede Freigabe']
   },
   'software-architektur-bewertung.html': {
@@ -451,7 +451,7 @@ const pageDetails = {
   },
   'continuous-security-compliance-management.html': {
     fit: ['Nach Assessments, Penetrationstests oder ersten Umsetzungsprojekten', 'Für kleine Teams ohne eigene laufende Security- und Evidence-Kapazität', 'Für Softwarehersteller mit dauerhaften NIS2-, CRA- oder Kundenanforderungen'],
-    basis: ['Fester Review-Rhythmus und transparentes Maßnahmenregister', 'Messbare Aufgaben, Verantwortlichkeiten und technische Nachweise', 'Direkter Zugriff auf erfahrene Engineering-Kapazität ohne Projekt-Overhead']
+    basis: ['Fester Review-Rhythmus und transparentes Maßnahmenregister', 'Messbare Aufgaben, Verantwortlichkeiten und technische Nachweise', 'Zusammenarbeit mit erfahrenen Entwicklern und klar vereinbarten Zuständigkeiten']
   },
   'technologieberatung-berlin.html': {
     fit: ['Vor Neuentwicklung, Migration oder größerer Modernisierung', 'Bei Make-or-Buy-, Plattform- oder Anbieterentscheidungen', 'Wenn technische Risiken und Folgekosten transparent werden müssen'],
